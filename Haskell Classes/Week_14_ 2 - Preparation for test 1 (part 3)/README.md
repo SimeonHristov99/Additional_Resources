@@ -1,5 +1,7 @@
 # Tasks
 
+# Tasks
+
 # Task 1
 Write a function that removes symbols other than numbers and digits in a string.
 
@@ -75,3 +77,32 @@ type Record = (Student, Subject, Note)
 Test case:
 
     hardestSubject [("John", "Maths", 5), ("Kennedy", "English", 2), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 4), ("Jenn", "English", 2)] -> "English"
+
+# Task 8
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA - Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a function which translates a given DNA string into RNA.
+
+Test case:
+
+    dnaToRna "GCAT" -> "GCAU"
+
+# Task 9
+A snail crawls up a column. During the day it crawls up some distance. During the night it sleeps, so it slides down for some distance (less than it crawls up during the day).
+
+Your function accepts three arguments:
+ - The height of the column (meters);
+ - The distance that the snail crawls during the day (meters);
+ - The distance that the snail slides down during the night (meters).
+
+Calculate number of days the snail will need to reach the top of the column.
+
+Test cases:
+
+    snail 3 2 1 -> 2
+    snail 10 3 1 -> 5
+    snail 10 3 2 -> 8
+    snail 100 20 5 -> 7
+    snail 5 10 3 -> 1
