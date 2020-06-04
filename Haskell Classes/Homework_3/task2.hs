@@ -23,7 +23,7 @@ t3 = Node 'a' (Node 'b' (Node 'd' (Node 'h' Empty Empty) (Node 'i' Empty Empty))
 
 containsWord :: (Eq a) => BTree a -> [a] -> Bool
 containsWord Empty _ = False
-containsWord _ [] = True
+containsWord _ [] = error "A word must contain at least one character"
 containsWord (Node value left right) (x:xs)
  | value == x = helper left xs || helper right xs
  | otherwise = containsWord left (x:xs) || containsWord right (x:xs)
