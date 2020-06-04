@@ -23,14 +23,13 @@ t3 = Node 'a' (Node 'b' (Node 'd' (Node 'h' Empty Empty) (Node 'i' Empty Empty))
 
 containsWord :: BTree -> [Char] -> Bool
 containsWord Empty _ = False
-containsWord (Node value Empty Empty) [x] = value == x
+containsWord _ [] = True
 containsWord (Node value left right) (x:xs)
  | value == x = helper left xs || helper right xs
- | otherwise = containsWord left xs || containsWord right xs
-containsWord _ _ = True
-
+ | otherwise = containsWord left (x:xs) || containsWord right (x:xs)
+ 
 helper :: BTree -> [Char] -> Bool
-helper Empty _ = True
+helper Empty [] = True
 helper (Node value left right) (x:xs)
  | value == x = helper left xs || helper right xs
  | otherwise = False
