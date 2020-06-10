@@ -3,13 +3,13 @@
 # Task 1
 Define a function that accepts a one-argument function and a list of numbers [y<sub>1</sub>, y<sub>2</sub> .. y<sub>n</sub>] and returns a function that for every "x" calculates the expression f(y<sub>1</sub> * x) + 2 * f(y<sub>2</sub> * x) + .. + n * f(y<sub>n</sub> * x) .
 
-Test case:
+Test cases:
 
     If g is myPolynomial (\x -> x - 2) [1, 4, 7, 8, 5, 2],
         then g 5 -> 453
     If g is myPolynomial (\x -> x + 10) [3.62, 6.12, 9.45, 8.02, 5, 2],
         then g (-5) -> -356.45
-    myPolynomial (\x -> x - 2) [1, 4, 7, 8, 5, 2] $ 5 -- 453
+    myPolynomial (\x -> x - 2) [1, 4, 7, 8, 5, 2] $ 5 -> 453
 
 Notes:
 
@@ -24,7 +24,7 @@ Define a function that accepts a one-argument function "f" and a number "y" and 
     - y, if it is greater than or equal to the result of applying f to x
     - the result of applying f to x, otherwise
 
-Test case:
+Test cases:
 
     upperBound (*2) 100 $ 50 -> 100
     upperBound (*2) 100.236 $ 500.002 -> 1000.004
