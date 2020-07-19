@@ -22,7 +22,6 @@ cone :: (Num a, Ord a) => BTree a -> Bool
 cone tree = helper tree 0
  where
      helper :: (Num a, Ord a) => BTree a -> Int -> Bool
-     helper (Node value Nil Nil) _ = True
      helper tree k
       | successors == [] = True
       | otherwise = sum successors > sum (getElementsAtLevel tree k)
