@@ -1,0 +1,12 @@
+#lang racket
+
+(define (myfib n)
+  (if (< n 2) 1 (+ (myfib (- n 1)) (myfib (- n 2)))))
+
+(define (helper n result prev)
+  (if (< n 2)
+      result
+      (helper (- n 1) (+ result prev) result)))
+
+(define (myfibIter n)
+  (helper n 1 1))
