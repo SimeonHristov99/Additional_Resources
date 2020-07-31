@@ -1,4 +1,0 @@
-#lang racket
-
-(define (myfunc x y)
-  (/ (+ (* x x) (* y y)) 2))
