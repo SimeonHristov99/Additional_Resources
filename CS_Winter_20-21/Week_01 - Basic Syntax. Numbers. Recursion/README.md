@@ -86,33 +86,3 @@ Test case:
 
     (myFact 11) => 39916800
     (myFactIter 11) => 39916800
-
-# Bonus
-
-# Task 9
-Define a procedure *isDate? d m y* that checks whether the passed date is valid.
-
-Test cases:
-
-    (isDate 29 2 2020) => #t
-    (isDate 1 8 2020) => #t
-    (isDate 31 8 2020) => #t
-    (isDate 19 5 1999) => #t
-    (isDate 29 2 2019) => #f
-    (isDate 32 8 2020) => #f
-    (isDate 0 2 2020) => #f
-
-Recap - How many days are in each month:
-
-    January - 31
-    February - 28 (29 if leap_year)
-    March - 31
-    April - 30
-    May - 31
-    June - 30
-    July - 31
-    August - 31
-    September - 30
-    October - 31
-    November - 30
-    December - 31
