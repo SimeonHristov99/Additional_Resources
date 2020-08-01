@@ -1,7 +1,3 @@
-# Notes
-    - what was the difference between iterative and recursive processes?
-    - introduce filter, length, range, member, list?, apply, cad*r, for/list with #:when, exact-round
-
 # Tasks
 
 # Task 1
