@@ -1,4 +1,4 @@
-# Repository with exercises for the Functional Programming Course 2019/2020
+# Functional Programming, Information Systems, Summer Semester, 2020-2021 
 
 # Quizlets
  - Part 5 (Polymorphism, typeclasses and algebraic types): https://quizlet.com/_8eio4x?x=1jqt&i=2o9990

@@ -1,14 +1,14 @@
 # Tasks
 
 # Task 1
-Define a procedure _myMin x y_ that returns the smaller of two numbers.
+Define a procedure *myMin x y* that returns the smaller of two numbers.
 
 Test case:
 
     (myMin 13 5) => 5
 
 # Task 2
-Define a predicate _inside? x a b_ that checks whether _x_ is in the interval [_a_, _b_].
+Define a predicate *inside? x a b* that checks whether *x* is in the interval [*a*, *b*].
 
 Test cases:
 
@@ -44,21 +44,21 @@ Recap:
         else not_leap_year 
 
 # Task 4
-Define a procedure _sumSquares x y_ that returns the sum of the squares of _x_ and _y_.
+Define a procedure *sumSquares x y* that returns the sum of the squares of *x* and *y*.
 
 Test case:
 
     (sumSquares -5 -13) => 194
 
 # Task 5
-Define a procedure _average x y_ that returns the average of _x_ and _y_.
+Define a procedure *average x y* that returns the average of *x* and *y*.
 
 Test case:
 
     (average 1 100) => 50(1/2)
 
 # Task 6
-Define a procedure _squaresAverage x y_ that returns the average of the sum of the squares of _x_ and _y_.
+Define a procedure *squaresAverage x y* that returns the average of the sum of the squares of *x* and *y*.
 
 Test case:
 
