@@ -11,10 +11,14 @@
 
 # In case of a wrong result
     - check procedure application -> should be prefix.
-    - parenthasis around every procedure.
+    - procedure => parenthasis
     - reconstruct the algorithm.
 
 # Additional links
+## For Haskell:
+    - Youtube channel (beginner): https://www.youtube.com/channel/UC3xdLFFsqG701QAyGJIPT1g/videos
+    - Youtube channel (advanced): https://www.youtube.com/c/Tsoding/videos
 ## For Racket:
- - Cheet sheet: https://docs.racket-lang.org/racket-cheat/index.html
- - Some built-in procedures: https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_8.html
+    - Youtube playlist: https://www.youtube.com/watch?v=bq25PHiRVfM&list=PLsWq88lFdQCfZtDRUQVuGGbnthiEIeQdf
+    - Cheet sheet: https://docs.racket-lang.org/racket-cheat/index.html
+    - Some built-in procedures: https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_8.html

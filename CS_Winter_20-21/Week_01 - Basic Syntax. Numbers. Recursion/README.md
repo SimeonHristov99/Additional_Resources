@@ -67,7 +67,7 @@ Test case:
 # Task 7
 Define a procedure for calculating the GCD of two numbers.
 
-Test case:
+Test cases:
 
     (myGcd 5 13) => 1
     (myGcd 13 1235) => 13
@@ -82,7 +82,7 @@ Recap:
 # Task 8
 Define two procedures for calculating the factorial of a number: recursive - *myFact n* and iterative - *myFactIter n*.
 
-Test case:
+Test cases:
 
     (myFact 11) => 39916800
     (myFactIter 11) => 39916800
