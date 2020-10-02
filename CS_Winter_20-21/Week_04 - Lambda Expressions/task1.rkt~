@@ -1,0 +1,10 @@
+#lang racket
+
+(define (substr? x y)
+  (if (= (remainder x 10) (remainder y 10))
+      (substr? (quotient x 10) (quotient y 10))
+      (substr? x (quotient y 10))
+      )
+  )
+
+(equal? (substr? 123 5123783) #t)

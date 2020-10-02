@@ -1,5 +1,3 @@
-# Tasks
-
 # Task 1
 Define two procedures for calculating the *n*-th number if the Fibonacci sequence: recursive - *myFib n* and iterative - *myFibIter n*.
 

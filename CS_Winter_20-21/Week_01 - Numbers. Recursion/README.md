@@ -1,5 +1,3 @@
-# Tasks
-
 # Task 1
 Define a procedure *myMin x y* that returns the smaller of two numbers.
 

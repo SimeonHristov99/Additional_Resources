@@ -3,22 +3,22 @@
 # Algorithm for solving Racket exercises
     - What is the name of the procedure?
     - How many arguments does it take? Label them.
-    - Make a list of all the constraints. (What is the domain of the attributes?)
-    - Construct an algorithm (steps or diagram) that solves for the test cases with the given constraints.
-    - Try the simplest case.
-    - Try the most extreme case.
-    - Try a case that should return an error.
+    - What is the domain of the attributes?
+    - What is the simplest case?
+    - What is an extreme case?
+    - What case would return an error?
+    - Can we write down the steps to solve it?
 
 # In case of a wrong result
-    - check procedure application -> should be prefix.
+    - check procedure application -> should be prefix
     - procedure => parenthasis
-    - reconstruct the algorithm.
+    - reconstruct the algorithm
 
 # Additional links
 ## For Haskell:
-    - Youtube channel (beginner): https://www.youtube.com/channel/UC3xdLFFsqG701QAyGJIPT1g/videos
-    - Youtube channel (advanced): https://www.youtube.com/c/Tsoding/videos
+ - Youtube channel (beginner): https://www.youtube.com/channel/UC3xdLFFsqG701QAyGJIPT1g/videos
+ - Youtube channel (advanced): https://www.youtube.com/c/Tsoding/videos
 ## For Racket:
-    - Youtube playlist: https://www.youtube.com/watch?v=bq25PHiRVfM&list=PLsWq88lFdQCfZtDRUQVuGGbnthiEIeQdf
-    - Cheet sheet: https://docs.racket-lang.org/racket-cheat/index.html
-    - Some built-in procedures: https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_8.html
+- Youtube playlist: https://www.youtube.com/watch?v=bq25PHiRVfM&list=PLsWq88lFdQCfZtDRUQVuGGbnthiEIeQdf
+- Cheet sheet: https://docs.racket-lang.org/racket-cheat/index.html
+- Some built-in procedures: https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_8.html
