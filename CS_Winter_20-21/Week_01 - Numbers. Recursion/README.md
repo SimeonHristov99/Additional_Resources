@@ -3,29 +3,18 @@ Define a procedure *myMin x y* that returns the smaller of two numbers.
 
 Test case:
 
-    (myMin 13 5) => 5
+    (equal? (myMin 13 5) 5)
 
 # Task 2
 Define a predicate *inside? x a b* that checks whether *x* is in the interval [*a*, *b*].
 
 Test cases:
 
-    (inside? 1 2 3) => #f
-    (inside? 2 1 3) => #t
+    (equal? (inside? 1 2 3) #f)
+    (equal? (inside? 2 1 3) #t)
 
 # Task 3
 Define two procedures *leapYear? n* and *leapYearOneLine? n* that check whether *n* is a leap year. Use *cond* for the first procedure and boolean logical operators for the second.
-
-Test cases:
-
-    (leapYear? 2020) => #t          (leapYearOneLine? 2020) => #t
-    (leapYear? 1988) => #t          (leapYearOneLine? 1988) => #t
-    (leapYear? 1600) => #t          (leapYearOneLine? 1600) => #t
-    (leapYear? 2400) => #t          (leapYearOneLine? 2400) => #t
-    (leapYear? 2023) => #f          (leapYearOneLine? 2023) => #f
-    (leapYear? 1700) => #f          (leapYearOneLine? 1700) => #f
-    (leapYear? 1800) => #f          (leapYearOneLine? 1800) => #f
-    (leapYear? 2100) => #f          (leapYearOneLine? 2100) => #f
 
 Recap:
 
@@ -41,12 +30,34 @@ Recap:
         else if year is divisible by 4 then is_leap_year
         else not_leap_year 
 
+Test cases:
+
+(display "\nUsing cond\n")
+(equal? (leapYear? 2020) #t)
+(equal? (leapYear? 1988) #t)
+(equal? (leapYear? 1600) #t)
+(equal? (leapYear? 2400) #t)
+(equal? (leapYear? 2023) #f)
+(equal? (leapYear? 1700) #f)
+(equal? (leapYear? 1800) #f)
+(equal? (leapYear? 2100) #f)
+
+(display "\nUsing boolean logical operators\n")
+(equal? (leapYearOneLine? 2020) #t)
+(equal? (leapYearOneLine? 1988) #t)
+(equal? (leapYearOneLine? 1600) #t)
+(equal? (leapYearOneLine? 2400) #t)
+(equal? (leapYearOneLine? 2023) #f)
+(equal? (leapYearOneLine? 1700) #f)
+(equal? (leapYearOneLine? 1800) #f)
+(equal? (leapYearOneLine? 2100) #f)
+
 # Task 4
 Define a procedure *sumSquares x y* that returns the sum of the squares of *x* and *y*.
 
 Test case:
 
-    (sumSquares -5 -13) => 194
+    (equal? (sumSquares -5 -13) 194)
 
 # Task 5
 Define a procedure *average x y* that returns the average of *x* and *y*.
@@ -67,8 +78,8 @@ Define a procedure for calculating the GCD of two numbers.
 
 Test cases:
 
-    (myGcd 5 13) => 1
-    (myGcd 13 1235) => 13
+    (equal? (myGcd 5 13)1)
+    (equal? (myGcd 13 1235) 13)
 
 Recap:
 
@@ -82,5 +93,5 @@ Define two procedures for calculating the factorial of a number: recursive - *my
 
 Test cases:
 
-    (myFact 11) => 39916800
-    (myFactIter 11) => 39916800
+    (equal? (myFact 11) 39916800)
+    (equal? (myFactIter 11) 39916800)
