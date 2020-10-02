@@ -32,25 +32,25 @@ Recap:
 
 Test cases:
 
-(display "\nUsing cond\n")
-(equal? (leapYear? 2020) #t)
-(equal? (leapYear? 1988) #t)
-(equal? (leapYear? 1600) #t)
-(equal? (leapYear? 2400) #t)
-(equal? (leapYear? 2023) #f)
-(equal? (leapYear? 1700) #f)
-(equal? (leapYear? 1800) #f)
-(equal? (leapYear? 2100) #f)
-
-(display "\nUsing boolean logical operators\n")
-(equal? (leapYearOneLine? 2020) #t)
-(equal? (leapYearOneLine? 1988) #t)
-(equal? (leapYearOneLine? 1600) #t)
-(equal? (leapYearOneLine? 2400) #t)
-(equal? (leapYearOneLine? 2023) #f)
-(equal? (leapYearOneLine? 1700) #f)
-(equal? (leapYearOneLine? 1800) #f)
-(equal? (leapYearOneLine? 2100) #f)
+(display "\nUsing cond\n")<br>
+(equal? (leapYear? 2020) #t)<br>
+(equal? (leapYear? 1988) #t)<br>
+(equal? (leapYear? 1600) #t)<br>
+(equal? (leapYear? 2400) #t)<br>
+(equal? (leapYear? 2023) #f)<br>
+(equal? (leapYear? 1700) #f)<br>
+(equal? (leapYear? 1800) #f)<br>
+(equal? (leapYear? 2100) #f)<br>
+<br>
+(display "\nUsing boolean logical operators\n")<br>
+(equal? (leapYearOneLine? 2020) #t)<br>
+(equal? (leapYearOneLine? 1988) #t)<br>
+(equal? (leapYearOneLine? 1600) #t)<br>
+(equal? (leapYearOneLine? 2400) #t)<br>
+(equal? (leapYearOneLine? 2023) #f)<br>
+(equal? (leapYearOneLine? 1700) #f)<br>
+(equal? (leapYearOneLine? 1800) #f)<br>
+(equal? (leapYearOneLine? 2100) #f)<br>
 
 # Task 4
 Define a procedure *sumSquares x y* that returns the sum of the squares of *x* and *y*.
