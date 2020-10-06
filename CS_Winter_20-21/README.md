@@ -10,7 +10,7 @@
     - Can we write down the steps to solve it?
 
 # In case of a wrong result
-    - check procedure application -> should be prefix
+    - check procedure application => should be prefix
     - procedure => parenthasis
     - reconstruct the algorithm
 
