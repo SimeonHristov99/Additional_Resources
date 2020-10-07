@@ -1,4 +1,4 @@
-# Functional Programming, Computer Science, Winter Semester, 2020-2021 
+# Functional Programming, Computer Science, Winter Semester 2020-2021 
 
 # Algorithm for solving Racket exercises
     - What is the name of the procedure?
@@ -22,3 +22,5 @@
 - Youtube playlist: https://www.youtube.com/watch?v=bq25PHiRVfM&list=PLsWq88lFdQCfZtDRUQVuGGbnthiEIeQdf
 - Cheet sheet: https://docs.racket-lang.org/racket-cheat/index.html
 - Some built-in procedures: https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_8.html
+## The course in moodle
+ - https://learn.fmi.uni-sofia.bg/course/view.php?id=6485
