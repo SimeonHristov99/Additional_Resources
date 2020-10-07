@@ -5,4 +5,4 @@
         x
         y))
 
-(equal? (my-min 13 5) 5)
+(= (my-min 13 5) 5)
