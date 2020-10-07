@@ -58,14 +58,6 @@ Test cases:
     (equal? (leap-year-one-line? 1800) #f)
     (equal? (leap-year-one-line? 2100) #f)
 
-# Task 7
-Define two procedures for calculating the factorial of a number: recursive - *my-fact n* and iterative - *my-fact-iter n*.
-
-Test cases:
-
-    (= (my-fact 11) 39916800)
-    (= (my-fact-iter 11) 39916800)
-
 # For home
 Define a procedure for calculating the GCD of two numbers.
 
