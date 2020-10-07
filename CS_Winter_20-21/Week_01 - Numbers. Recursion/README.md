@@ -38,33 +38,33 @@ Recap:
 
 Test cases:
 
-    (display "\nUsing cond\n")<br>
-    (equal? (leap-year? 2020) #t)<br>
-    (equal? (leap-year? 1988) #t)<br>
-    (equal? (leap-year? 1600) #t)<br>
-    (equal? (leap-year? 2400) #t)<br>
-    (equal? (leap-year? 2023) #f)<br>
-    (equal? (leap-year? 1700) #f)<br>
-    (equal? (leap-year? 1800) #f)<br>
-    (equal? (leap-year? 2100) #f)<br>
-    <br>
-    (display "\nUsing boolean logical operators\n")<br>
-    (equal? (leap-year-one-line? 2020) #t)<br>
-    (equal? (leap-year-one-line? 1988) #t)<br>
-    (equal? (leap-year-one-line? 1600) #t)<br>
-    (equal? (leap-year-one-line? 2400) #t)<br>
-    (equal? (leap-year-one-line? 2023) #f)<br>
-    (equal? (leap-year-one-line? 1700) #f)<br>
-    (equal? (leap-year-one-line? 1800) #f)<br>
-    (equal? (leap-year-one-line? 2100) #f)<br>
+    (display "\nUsing cond\n")
+    (equal? (leap-year? 2020) #t)
+    (equal? (leap-year? 1988) #t)
+    (equal? (leap-year? 1600) #t)
+    (equal? (leap-year? 2400) #t)
+    (equal? (leap-year? 2023) #f)
+    (equal? (leap-year? 1700) #f)
+    (equal? (leap-year? 1800) #f)
+    (equal? (leap-year? 2100) #f)
+    
+    (display "\nUsing boolean logical operators\n")
+    (equal? (leap-year-one-line? 2020) #t)
+    (equal? (leap-year-one-line? 1988) #t)
+    (equal? (leap-year-one-line? 1600) #t)
+    (equal? (leap-year-one-line? 2400) #t)
+    (equal? (leap-year-one-line? 2023) #f)
+    (equal? (leap-year-one-line? 1700) #f)
+    (equal? (leap-year-one-line? 1800) #f)
+    (equal? (leap-year-one-line? 2100) #f)
 
 # Task 7
 Define two procedures for calculating the factorial of a number: recursive - *my-fact n* and iterative - *my-fact-iter n*.
 
 Test cases:
 
-    (equal? (my-fact 11) 39916800)
-    (equal? (my-fact-iter 11) 39916800)
+    (= (my-fact 11) 39916800)
+    (= (my-fact-iter 11) 39916800)
 
 # For home
 Define a procedure for calculating the GCD of two numbers.
@@ -78,5 +78,5 @@ Recap:
 
 Test cases:
 
-    (equal? (my-gcd 5 13) 1)
-    (equal? (my-gcd 13 1235) 13)
+    (= (my-gcd 5 13) 1)
+    (= (my-gcd 13 1235) 13)
