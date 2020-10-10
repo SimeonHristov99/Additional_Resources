@@ -59,6 +59,7 @@ Test cases:
     (equal? (leap-year-one-line? 2100) #f)
 
 # For home
+# Task 8
 Define a procedure for calculating the GCD of two numbers.
 
 Recap:
