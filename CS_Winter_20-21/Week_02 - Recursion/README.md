@@ -51,7 +51,7 @@ Test cases:
     (equal? (perfect? 1) #f)
     
 # Task 7
-Define a predicate *inc-digits? n* that checks whether the digits of the non-negative *n* are ordered in an ascending order.
+Define a predicate *inc-digits? n* that checks whether the digits of the <strong>non-negative</strong> *n* are ordered in an ascending order.
 
 Test cases:
 
@@ -64,20 +64,31 @@ Define a procedure that returns the number of palindromes in the interval [a, b]
 
 Test case:
 
+    (= (num-palindromes 1 101) 19)
     (= (num-palindromes 1 100) 18)
     (= (num-palindromes 100 1) 18)
 
 # Task 2
-Define a procedure that returns the sum of the prime palindromes in the interval [a, b].
+Define a predicate that checks whether two numbers are amicable.
 
-Test case:
+Note:
 
-    (= (sum-prime-palindromes 1 100) 28)
-    (= (sum-prime-palindromes 100 1) 28)
+    Two numbers are amicable if the sum of the divisors of one of them is equal to the other.
+
+Test cases:
+
+    (equal? (amicable? 200 300) #f)
+    (equal? (amicable? 220 284) #t)
+    (equal? (amicable? 284 220) #t)
+    (equal? (amicable? 1184 1210) #t)
+    (equal? (amicable? 2620 2924) #t)
+    (equal? (amicable? 6232 6368) #t)
 
 # Task 3
-Define an iterative procedure that finds the number of odd divisors of a <strong>natural</strong> number n.
+Define a procedure *sum-special-primes n d* that returns the sum of the first *n* prime numbers that contain a digit *d*.
 
-Test case:
+Test cases:
 
-    (= (num-odd-divs 100) 3)
+    (= (sum-special-primes 5 2) 392)
+    (= (sum-special-primes 5 3) 107)
+    (= (sum-special-primes 10 3) 462)
