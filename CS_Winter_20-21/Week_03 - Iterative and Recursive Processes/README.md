@@ -39,8 +39,7 @@
     (= (sum-divisible-numbers 0 10 5) 5)
     (= (sum-divisible-numbers 0 100 5) 990)
 
-# For home
-# Задача 1
+# Задача 5
 Дефинирайте процедура *calc-series-sum x n*, която за подадени *x* и *n* пресмята *n*-тата частична сума на следния ред:
 
 ![Alt text](sequence.png?raw=true "Title")
@@ -55,7 +54,7 @@ Test cases:
     (calc-series-sum 1 5) ; -1 29/385
     (calc-series-sum 1 6) ; -1 937/12285
 
-# Задача 2
+# Задача 6
 Казваме, че дадено число х е петоъгълно, ако х точки в равнината може да бъдат разположени под формата на петоъгълник по следния начин:
 
 ![Alt text](pentagon.png?raw=true "Title")
