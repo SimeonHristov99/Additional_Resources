@@ -1,7 +1,5 @@
 #lang racket
 
-(require math/number-theory)
-
 (define (sum-digits n)
   (if (< n 10)
       n
@@ -12,7 +10,7 @@
 (define (sum-divisible-numbers a b k)
   (cond
     [(> a b) 0]
-    [(divides? k (sum-digits a)) (+ a (sum-divisible-numbers (+ a 1) b k))]
+    [(= (remainder (sum-digits a) k) 0) (+ a (sum-divisible-numbers (+ a 1) b k))]
     [else (sum-divisible-numbers (+ a 1) b k)]
     )
   )

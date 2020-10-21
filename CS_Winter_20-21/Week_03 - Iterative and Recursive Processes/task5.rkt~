@@ -1,5 +1,6 @@
 #lang racket
 
+; Task 1
 (define (calc-series-sum x n)
   (define (helper current-sum next-nom next-denom next-denom-mult next-x current-pow)
     (if (> current-pow n)

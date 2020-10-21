@@ -4,7 +4,7 @@
   (define (helper left-over-x left-over-y)
     (cond
       [(> left-over-x left-over-y) #f]
-      [(= left-over-x left-over-y) #t]
+      [(< left-over-y 10) (= left-over-x left-over-y)]
       [(= (remainder left-over-x 10) (remainder left-over-y 10)) (if (< left-over-x 10)
                                                                      #t
                                                                      (helper (quotient left-over-x 10) (quotient left-over-y 10))
@@ -13,7 +13,7 @@
       )
     )
   (if (or (< x 0) (< y 0))
-      (error "negative parameters")
+      (error "x or y was negative")
       (helper x y)
       )
   )
