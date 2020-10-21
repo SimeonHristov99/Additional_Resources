@@ -1,0 +1,11 @@
+official homework
+
+
+(require racket/trace)
+
+
+(require math/number-theory)
+ - https://docs.racket-lang.org/math/number-theory.html
+ - divides?
+ - (divides? 10 66) ; #f same as (= (remainder 66 10) 0)
+ - (divides? 10 100) ; #t
