@@ -31,5 +31,3 @@
 (= (nth-cuban 4) 61)
 (= (nth-cuban 50) 55897)
 (= (nth-cuban 100) 283669)
-(= (nth-cuban 200) 1570357)
-;(nth-cuban 0)
