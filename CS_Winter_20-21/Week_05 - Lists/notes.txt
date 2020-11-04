@@ -8,18 +8,15 @@ Functions
     - (cons 1 '()) ; short for construct
         - (cons 2 (cons 1 '()))
         - '(1 . (2 . (3 . ())))
-        - if the second par is not a list, the result is a pair
+        - if the second parameter is not a list, the result is a pair
             - '(1 . 2)
             - (list? '(1 . 2)) ; (pair? '(1 . 2))
 
 
  - check whether a list doesn't have any contents
     - (null? xs)
-
     - (empty? xs)
-
     - (equal? xs '())
-
     - (cons? xs)
 
 

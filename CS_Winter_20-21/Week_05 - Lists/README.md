@@ -54,7 +54,8 @@ Define a procedure that concatenates two lists.
 
     (equal? (concat '(1 2 3) '(4 5 6)) '(1 2 3 4 5 6))
 
-# Task 8
+# For home
+# Task 1
 Define a procedure that removes an element from a list.
 
 Test cases:
@@ -64,8 +65,7 @@ Test cases:
     (equal? (remove-all 1 '(1)) '())
     (equal? (remove-all 1 '(1 2 1 1)) '(2))
 
-# For home
-# Task 1
+# Task 2
 Define a procedure *longest-ascending-sub xs* that returns the longest sublist that is sorted in ascending order from xs.
 
 Test cases:
@@ -76,7 +76,7 @@ Test cases:
     (equal? (longest-ascending-sub '(1 5 2 3 4 5 6 7 7 1 5)) '(2 3 4 5 6 7 7))
     (equal? (longest-ascending-sub '(1 5 2 4 6 8 3 4 1)) '(2 4 6 8))
 
-# Task 2
+# Task 3
 Define a procedure *set-union xs ys* that takes two sets of numbers and returns their union. Make sure it (the union) is sorted in ascending order!
 
 Test cases:
