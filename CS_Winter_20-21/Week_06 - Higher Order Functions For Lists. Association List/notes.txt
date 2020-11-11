@@ -1,0 +1,78 @@
+################################################################################
+# Pairs and association lists
+################################################################################
+    - (<value1> . <value2>)
+
+    - How to construct?
+        - (cons 1 2)
+        - (cons 1 2 3) <- gives error, because pairs contain only two elements
+        - (cons "banana" "split") === '("banana" . "split")
+        - '(1 . 2) is a pair, but '(1 . (2)) is a list
+
+    - car = first element; cdr = second element
+
+    - can be used to form a list of pairs
+        - (list '(1 . 2) '(1 . 5) '(5 . 1))
+        - What is an association list?
+            - used for making hash maps
+            - a list of pairs where one of the values is unique (has the role of a key)
+            - (list '(1 . "One") '(2 . "Two") '(3 . "Three"))
+
+
+################################################################################
+# Higher order functions that work with lists
+################################################################################
+    - (map f xs) - applies f to every element of xs 
+        - f has to be unary
+        - What will the result be? (map (λ (x) (* x 2)) '(1 2 3 4 5))
+
+    - (apply f xs) - applies f to all element of xs
+        - f has to take (length xs) arguments
+        - What will the result be? (apply + '(1 2 3 4 5))
+
+    - (filter p? xs) - leaves out only the elements that satisfy p
+        - p? has to be unary
+        - What will the result be? (filter even? '(1 2 3 4 5))
+        - What will the result be? (filter (λ (x) (zero? (remainder x 3))) '(0 1 2 3 4 5 6))
+
+    - (ormap p? xs) - returns true if there is at least one element from xs that satisfies p
+        - What will the result be? (ormap even? '(1 2 3 4 5))
+
+    - (andmap p? x) - returns true if all elements from xs satisfy p
+        - What will the result be? (andmap even? '(1 2 3 4 5))
+            - What predicate would make it return the opposite result?
+
+    - foldl, foldr - reduce a list to a single value
+        - (foldl <binary-f> <init-val-accumulator> <xs>)
+        - first arg of <binary-f> is the current element from xs; second - the accumulator
+        - What will the result be? (foldl (λ (x y) (* x y)) 0 '(1 2 3 4 5))
+            - Write out all the calculations.
+            - How would you alter it so it returns the product of all numbers?
+            - Find the sum and product of those numbers using another HOF.
+        - What will the result be? (foldr (λ (x y) (and x y)) #f '(#t #t #t #t #t))
+            - Write out all the calculations.
+
+    -(take xs n) - връща списък с първите n елемента на xs
+        - What will the result be? (take '(1 2 3 4) 0)
+        - What will the result be? (take '(1 2 3 4) 2)
+        - What will the result be? (take '(1 2 3 4) 5)
+
+    -(drop xs n) - връща списък без първите n елемента на xs
+        - What will the result be? (drop '(1 2 3 4) 0)
+        - What will the result be? (drop '(1 2 3 4) 2)
+        - What will the result be? (drop '(1 2 3 4) 5)
+
+    -(for/list ([x  xs])
+        (f x))
+        - f has to be unary, but can't be lambda
+        - What will the result be? (for/list ([x '(1 2 3 4 5)])
+                                        (* x 2)
+                                        )
+        - not a typical functional procedure, so we'll stay away from it (unless we have no other choice)
+
+
+################################################################################
+# Other useful functions (not higher order)
+################################################################################
+    - (flatten xss) - reduces any sublists to a single list
+    - (remove-duplicates xs)
