@@ -19,7 +19,7 @@
  - Youtube channel (beginner): https://www.youtube.com/channel/UC3xdLFFsqG701QAyGJIPT1g/videos
  - Youtube channel (advanced): https://www.youtube.com/c/Tsoding/videos
 ## For Racket:
-- Wokring with lists and pairs: https://docs.racket-lang.org/reference/pairs.html
+- Working with lists and pairs: https://docs.racket-lang.org/reference/pairs.html
 - Youtube playlist: https://www.youtube.com/watch?v=bq25PHiRVfM&list=PLsWq88lFdQCfZtDRUQVuGGbnthiEIeQdf
 - Cheet sheet: https://docs.racket-lang.org/racket-cheat/index.html
 - Some built-in procedures: https://www.cs.cmu.edu/Groups/AI/html/r4rs/r4rs_8.html
