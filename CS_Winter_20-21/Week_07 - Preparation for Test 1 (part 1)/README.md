@@ -48,8 +48,8 @@ Define a predicate that takes two non-empty lists of lists of numbers. If *xss =
 
 Test cases:
 
-    (equal? (haveMatchingLengths '((1 2 3) (4 5 6) (7 8 9)) '((1 4 7) (2 5 8) (3 6 9))) #t)
-    (equal? (haveMatchingLengths '((1 2)) '((1 4 7) (2 5 8))) #f)
+    (equal? (have-matching-lengths '((1 2 3) (4 5 6) (7 8 9)) '((1 4 7) (2 5 8) (3 6 9))) #t)
+    (equal? (have-matching-lengths '((1 2)) '((1 4 7) (2 5 8))) #f)
 
 # Task 2
 Define a procedure that accepts a natural number *n* and returns an unary function of *k* which returns a list of the numbers between 1 and n (inclusive) such that no number contains k or more prime divisors.
