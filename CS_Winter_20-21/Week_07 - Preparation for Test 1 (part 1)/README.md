@@ -35,14 +35,12 @@ Test cases:
     (equal? (graph-contains-points '((1 . 2) (2 . 4) (3 . 4)) (λ (x) (+ x 1))) #f)
 
 # Task 5
-Define two procedures that modify a matrix as follows:
+Define a procedures that modify a matrix as follows:
  - if a row has a zero then the whole row in the resulting matrix should contain only zeros
- - if a column has a zero then the whole column in the resulting matrix should contain only zeros
 
 Test case:
 
     (equal? (zero-rows '((1 2 0) (3 4 1) (0 5 7) (4 2 4))) '((0 0 0) (3 4 1) (0 0 0) (4 2 4)))
-    (equal? (zero-cols '((1 2 0) (3 4 1) (0 5 7) (4 2 4)) '((0 2 0) (0 4 0) (0 5 0) (0 2 0))))
     
 # For home
 # Task 1
