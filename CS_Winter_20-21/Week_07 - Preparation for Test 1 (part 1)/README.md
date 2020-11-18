@@ -46,7 +46,7 @@ Test case:
     
 # For home
 # Task 1
-Define a predicate that takes two non-empty lists of list of numbers. If *xss = '(xs<sub>1</sub> .. xs<sub>n</sub>)* and *yss = '(ys<sub>1</sub> .. ys<sub>n</sub>)* the procedure should return whether all pairs of elements (xs<sub>i</sub>, ys<sub>i</sub>) have equal lengths.
+Define a predicate that takes two non-empty lists of lists of numbers. If *xss = '(xs<sub>1</sub> .. xs<sub>n</sub>)* and *yss = '(ys<sub>1</sub> .. ys<sub>n</sub>)* the procedure should return whether all pairs of elements (xs<sub>i</sub>, ys<sub>i</sub>) have equal lengths.
 
 Test cases:
 
