@@ -31,8 +31,8 @@ Define a procedure that accepts a list of pairs and an unary function f and retu
 
 Test cases:
 
-    (equal? (graph-contains-points '((1.2) (2.3) (3.4)) (λ (x) (+ x 1))) #t)
-    (equal? (graph-contains-points '((1.2) (2.4) (3.4)) (λ (x) (+ x 1))) #f)
+    (equal? (graph-contains-points '((1 . 2) (2 . 3) (3 . 4)) (λ (x) (+ x 1))) #t)
+    (equal? (graph-contains-points '((1 . 2) (2 . 4) (3 . 4)) (λ (x) (+ x 1))) #f)
 
 # Task 5
 Define two procedures that modify a matrix as follows:
