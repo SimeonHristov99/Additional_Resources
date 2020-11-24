@@ -1,0 +1,10 @@
+(combinations xs size) <- size is optional
+
+    (combinations '(1 2 3)) => '(() (1) (2) (1 2) (3) (1 3) (2 3) (1 2 3))
+    (combinations '(1 2 3) 2) => '((1 2) (1 3) (2 3))
+
+
+(takef xs pred) : Returns a list whose elements are taken successively from xs as long as they satisfy pred. The returned list includes up to, but not including, the first element in xs for which pred returns #f.
+
+(takef '(2 4 5 8) even?) => '(2 4)
+(takef '(2 4 6 8) odd?) => '()
