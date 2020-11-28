@@ -1,9 +1,0 @@
-Следващата функция решава задача за намиране на фанториел на дадено число n.
-
-factorial :: Integer -> Integer
-factorial n = helper 1 1
- where
-    helper :: Integer -> Integer -> Integer
-    helper i result
-     | i > n = result
-     | otherwise = helper (i+1) (result*i)
