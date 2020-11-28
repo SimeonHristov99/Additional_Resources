@@ -16,6 +16,8 @@
 
 # Additional links
 ## For Haskell:
+ - Install Visual Studio Code: https://code.visualstudio.com/Download
+ - Install Haskell (drop an email to s.e.hristov99@gmail.com if having problems): https://www.haskell.org/platform/windows.html
  - Youtube channel (beginner): https://www.youtube.com/channel/UC3xdLFFsqG701QAyGJIPT1g/videos
  - Youtube channel (advanced): https://www.youtube.com/c/Tsoding/videos
 ## For Racket:
