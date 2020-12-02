@@ -64,14 +64,6 @@ Test cases:
     print $ perfect 6 == True
     print $ perfect 495 == False
     print $ perfect 33550336 == True
-    
-# Task 8
-Define a predicate that checks whether the digits of a non-negative whole number are ordered in an ascending order.
-
-Test cases:
-
-    print $ hasIncDigits 1244 == True
-    print $ hasIncDigits 12443 == False
 
 # For home
 # Task 1
@@ -103,6 +95,8 @@ Define a function that reverses a non-negative number.
 # Task 4
 Define a predicate that checks whether a non-negative number is a palindrome.
 
+Test cases:
+
     print $ isPalindrome 6 == True
     print $ isPalindrome 1010 == False
     print $ isPalindrome 505 == True
@@ -126,6 +120,14 @@ Test cases:
     print $ areAmicable 6232 6368 == True
 
 # Task 6
+Define a predicate that checks whether the digits of a non-negative whole number are ordered in an ascending order.
+
+Test cases:
+
+    print $ hasIncDigits 1244 == True
+    print $ hasIncDigits 12443 == False
+
+# Task 7
 Define a predicate that checks whether a number is prime.
 
  - solve using guards

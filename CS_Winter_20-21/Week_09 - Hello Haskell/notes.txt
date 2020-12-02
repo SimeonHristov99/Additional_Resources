@@ -4,11 +4,12 @@
  - general:
      - no more brackets :-)
         - VEEERY whitespace sensitive
+            - .yml
      - no more prefix :-)
      - the term function is used instead of procedure
          - everything is a function now!
      - use camel case to name identifiers, i.e. myFunction
-     - require = include
+     - require = import
      - when passing negative numbers as parameters surround them in brackets
          - helper (-1)
 
@@ -20,9 +21,14 @@
 
     
  - lambda:
+ (lambda (x y z) (+ x y z)) => (\ x y z -> x + y + z)
      - (\ x -> x + 5)
      - (\ x y -> x + y)
      - (\ x y z -> x y z) (\ x y -> x + y) 5 6
+     x = (\ x y -> x + y)
+     y = 5
+     z = 6
+     (\ 5 6 -> 5 + 6) 5 6
 
 
  - lists:
@@ -33,7 +39,7 @@
 
  - types:
      - Int (using 32 bits), Integer (unbound)
-     - Double, Rational
+     - Double, Rational (unbound)
      - Bool (True False; && || not)
      - Char, String == [Char]
      - read the following: a = 5
@@ -48,6 +54,7 @@
              - the compiler can guess the types, though just like in Racket
                  - this ability is called type inference
              - fname :: [type1 -> type2 -> ... ->]returnType
+
 
  - built-in functions:
     - min, max
