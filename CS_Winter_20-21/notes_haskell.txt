@@ -1,0 +1,81 @@
+ - general:
+     - no more brackets :-)
+        - VEEERY whitespace sensitive
+     - no more prefix :-)
+     - comments:
+         - use -- for single line comments
+         - use {--} for multiline comments
+         - only for human-readable text!
+     - the term function is used instead of procedure
+         - everything is a function now!
+     - use camel case to name identifiers, i.e. myFunction
+     - require = import
+     - when passing negative numbers as parameters surround them in brackets
+         - helper (-1)
+
+
+ - types:
+     - Int (using 32 bits), Integer (unbound)
+     - Double, Rational (unbound)
+     - Bool (True False; && || not)
+     - Char, String == [Char]
+     - read the following: a = 5
+     - strongly typed:
+         - all types must be known at compile time
+     - staticly typed:
+         - if f returns Int, then f cannot return Double
+     - type inference:
+         - What is a declaration?
+         - Did we have declarations in Racket?
+         - We can have them in Haskell.
+             - the compiler can guess the types, though just like in Racket
+                 - this ability is called type inference
+             - fname :: [type1 -> type2 -> ... ->]returnType
+    
+
+ - built-in functions:
+     - min, max
+     - fromIntegral :: Int -> Double
+         - convert a whole number into its floating point equivalent
+         - use when having to take square root of an integer
+     - cond is now this: | <- what ??
+     - sqrt is the same
+     - expt is ** or ^
+     - + - * / take only two arguments
+        - / takes only floating point arguments
+     - quotient = div
+     - remainder = mod
+     - != is now /=
+
+
+ - lambda:
+     - (lambda (x y z) (+ x y z)) => (\ x y z -> x + y + z)
+     - (\ x -> x + 5)
+     - (\ x y -> x + y)
+     - (\ x y z -> x y z) (\ x y -> x + y) 5 6 <- How does this work?
+
+
+ - tuples (vectors)
+     - data structures whose size has to be explicitly stated
+     - can hold multiple types
+     - fst (5, 6) => 5
+     - snd (5, 6) => 6
+
+ - lists:
+     - [] = empty list
+     - (range 1 6) = '(1 2 3 4 5) => [1 .. 5] = [1 2 3 4 5]
+     - product [1 .. 5] = 120 (The product of all elements)
+     - sum [1 .. 5] = 15 (The sum of all elements)
+     - sort [5 .. 1] => [1, 2, 3, 4, 5] (part of Data.List)
+     - head [1 .. 5] = 1
+     - last [1 .. 5] = 5
+     - tail [1 .. 5] = [2, 3, 4, 5]
+     - init [1 .. 5] = [1, 2, 3, 4]
+     - [1 .. 5] !! 3 = 4
+     - show 15 == "15" == ['1', '5']
+     - digitToInt '5' -> 5 (part of Data.Char)
+     - elem 5 [1 .. 5] => True (== member)
+     - remove-duplicates == nub (part of Data.List)
+     - nubBy - uses a user-supplied predicate; similar to filter but takes two arguments (part of Data.List)
+     - The group function takes a list and returns a list of lists such that the concatenation of the result is equal to the argument. Moreover, each sublist in the result contains only equal elements. For ex
+         group "Mississippi" => ["M","i","ss","i","ss","i","pp","i"]
