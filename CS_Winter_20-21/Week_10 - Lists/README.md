@@ -115,7 +115,7 @@ Test cases:
 # Task 11
 Define a function that returns the product of all natural numbers in a list, the sum of the divisors of which is a multiple of k.
 
-Implementation detail:
+Implementation details:
 
     Use list comprehension!
     Use pattern matching!
@@ -180,7 +180,7 @@ Test cases:
     print $ primesInRange 100 1 == [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
 
 # Task 4
-Define a function that takes a whole number n and returns ascending left suffix of n.
+Define a function that takes a whole number and returns its ascending left suffix.
 
 Test cases:
 
