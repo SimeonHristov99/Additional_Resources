@@ -79,7 +79,7 @@ Test cases:
     print $ countOccurrences "ThisIsAReallyLongWordContaingAlmostEveryCharacter" == [('a',6),('c',3),('d',1),('e',4),('g',2),('h',2),('i',3),('l',4),('m',1),('n',3),('o',4),('r',5),('s',3),('t',4),('v',1),('w',1),('y',2)]
 
 # Task 8
-Define a function accepts two lists with equal lengths - *xs* and *ys* and checks whether there exists a number *n*, such that *x<sub>i</sub> = n + y<sub>i</sub>*.
+Define a function accepts two lists with equal lengths - *xs* and *ys* and checks whether there exists a number *n*, such that *y<sub>i</sub> = n + x<sub>i</sub>*.
 
 Test cases:
 
@@ -87,44 +87,6 @@ Test cases:
     print $ isImage [1, 2, 3] [2, 3, 4] == True
     print $ isImage [1, 2, 3] [2, 5, 4] == False
     print $ isImage [1, 2, 3] [2, 5] == False
-
-# Task 9
-Define a function that accepts a list and a number - *n* and returns a list of lists with length *n*.
-
-Implementation detail:
-
-    Use pattern matching!
-
-Test cases:
-
-    print $ chunksOf [1, 2, 3, 4, 5, 6, 7] 3 == [[1,2,3],[4,5,6],[7]]
-    print $ chunksOf [1, 2, 3, 4, 5, 6] 3 == [[1,2,3],[4,5,6]]
-
-# Task 10
-Define a predicate that checks whether a matrix is triangular.
-
-Test cases:
-
-    print $ isTriangular [[-1]] == True
-    print $ isTriangular [[-1, -2, -3], [0, -5, -6], [0, 0, -9]] == True
-    print $ isTriangular [[1, 2, 3], [0, 5, 6], [0, 0, 9]] == True
-    print $ isTriangular [[0, 2, 3], [0, 0, 6], [1, 0, 0]] == False
-    print $ isTriangular [[1, 2, 3], [1, 5, 6], [0, 0, 9]] == False
-    print $ isTriangular [[1, 2, 3, 4], [0, 5, 6, 7], [0, 0, 8, 9], [0, 0, 0, 9]] == True
-
-# Task 11
-Define a function that returns the product of all natural numbers in a list, the sum of the divisors of which is a multiple of k.
-
-Implementation details:
-
-    Use list comprehension!
-    Use pattern matching!
-
-Test cases:
-
-    print $ naturalProduct [-1, 0, -2, -3] 5 == 0 -- There are no natural numbers
-    print $ naturalProduct [5, 10] 5 == 0 -- Sum of the divisors is 9
-    print $ naturalProduct [95, 75, 15, 55, 11, 14, 18, 35, 25] 5 == 1330
 
 # For home
 # Task 1
