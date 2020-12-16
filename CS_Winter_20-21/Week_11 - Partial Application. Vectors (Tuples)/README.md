@@ -76,8 +76,8 @@ Write a function that takes two parameters a and b and returns the tuple (x, y) 
 
 Test cases:
 
-    print $ divide (10, 5) == (2, 0) == 10 / 5 = 2 and 10 % 5 = 0
-    print $ divide (5, 10) == (0, 5) == 5 / 10 = 0 and 5 % 10 = 5
+    print $ divide (10, 5) == (2, 0) -- 10 / 5 = 2 and 10 % 5 = 0
+    print $ divide (5, 10) == (0, 5) -- 5 / 10 = 0 and 5 % 10 = 5
 
 # Task 5
 Define the Vector data type that is the tuple (x, y, z). Define the following functions:
@@ -200,12 +200,12 @@ Test cases:
     print $ removeFirst 3 [5, 1, 5, 3, 5] == [5, 1, 5, 5]
 
 # Task 3
-Write a function that removes every element equal to x in a list.
+Write **TWO** functions that remove every element equal to x in a list.
 
 Implementation details:
 
-    - Solve using pattern matching.
-    - Solve using higher order functions and PARTIAL APPLICATION.
+    - The first solution should use pattern matching (WITHOUT HEAD AND TAIL);
+    - The second - higher order functions and PARTIAL APPLICATION.
 
 Test cases:
 
@@ -214,6 +214,7 @@ Test cases:
     print $ removeAll 5 [1] == [1]
     print $ removeAll 5 [5, 1, 5, 3, 5] == [1, 3]
     print $ removeAll 3 [5, 1, 5, 3, 5] == [5, 1, 5, 5]
+    -- same for removeAllHO
 
 # Task 4
 Define the following functions for the Rat data type:
@@ -250,7 +251,7 @@ Define a function that creates the tuple (x, y) where x is the smaller element o
 
 Implementation details:
 
-    Use pattern matching!
+    Head and Tail are forbidden!
 
 Test cases:
 
@@ -258,12 +259,13 @@ Test cases:
     print $ combine [(3, 9), (8, 7), (7, 9), (8, 8), (5, 0), (9, 2)] == (377802, 989859)
 
 # Task 6
-Define a function that returns a tuple (x, y) where x is True if for every element in two lists a<sub>i</sub> = x + b<sub>i</sub>. Return the boolean and the x.
+Define a function that returns a tuple (b, n) where b is True if for every element in two lists - *xs*, *ys*: y<sub>i</sub> = n + x<sub>i</sub>.
 
 Test cases:
 
     print $ isImage [1, 2, 3, 4] [2, 3, 4, 5] == (True, 1)
     print $ isImage [1, 2, 3, 4] [4, 5, 6, 7] == (True, 3)
+    print $ isImage [4, 5, 6, 7] [1, 2, 3, 4] == (True, -3)
     print $ isImage [1, 2, 3, 4] [4, 5, 6, 6] == (False, 0)
     print $ isImage [1, 2] [-1, -2] == (False, 0)
     print $ isImage [1, 2, 3, 4] [2, 3, 4, 4] == (False, 0)
@@ -273,7 +275,8 @@ Define **TWO** functions - *isSorted* and *isSortedXs* that check whether a list
 
 Implementation detail:
 
-    Use pattern matching!
+    isSorted should implement pattern matching!
+    For isSortedXs you may use any built-in function.
 
 Test cases:
 
@@ -288,33 +291,21 @@ Test cases:
     print $ isSorted [100, 101, -102] == False
     print $ isSorted [1, 2, 3, 4, 5, 6] == True
     print $ isSorted [-1, -2, -3, -4, -5, -6] == True
+    -- same for isSortedXs
     
 # Task 8
-Define a function *rf* that takes two unary, whole-number functions as parameters - *f* and *g* and returns a binary function that takes a list - *xs* as its first argument, and an unary function - *h* as its second argument. The result from the call to *rf* should be a list containing elements of the form *h(x)* where *x* spans *ns* and *f(x) > g(x)*.
+Define a function *rf* that takes two unary, whole-number functions as parameters - *f* and *g* and returns a binary function that takes a list - *xs* as its first argument, and an unary function - *h* as its second argument. The result from the call to *rf* should be a list containing elements of the form *h(x)* where *x* spans *xs* and *f(x) > g(x)*.
 
 Test case:
 
     print $ (rf ((-) (-4)) (* (-2))) [1..10] (* 3) == [15,18,21,24,27,30] -- only 5, 6, 7, 8, 9 and 10 satisfy the condition
 
 # Task 9
-Define a function that accepts a list and a number - *n* and returns a list of lists with length *n*.
-
-Implementation detail:
-
-    Use pattern matching!
-
-Test cases:
-
-    print $ chunksOf [1, 2, 3, 4, 5, 6, 7] 3 == [[1,2,3],[4,5,6],[7]]
-    print $ chunksOf [1, 2, 3, 4, 5, 6] 3 == [[1,2,3],[4,5,6]]
-
-# Task 10
 Define a function that returns the product of all natural numbers in a list, the sum of the divisors of which is a multiple of k.
 
 Implementation details:
 
     Use list comprehension!
-    Use pattern matching!
 
 Test cases:
 
