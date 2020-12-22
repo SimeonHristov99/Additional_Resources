@@ -1,0 +1,103 @@
+
+3 types of searching algs:
+
+Classical
+    - uninformed (access only to problem definition):
+        - g(n)
+        - DFS (backtracking) (по височина)
+            - пълнота (намирам ли решение): Не, когато m (max depth) == inf || b == inf. Else, yes
+            - сложност по време (брой изследвани възли): b^m
+            - сложност по памет (max size of frontier (текущо изследвани възли)): b*d (depth of closest goal)
+            - оптималност (least g(n)): no
+            - DLS (Depth-Limited Search): Решава проблема с m == inf, чрез задаване на l (max-depth)
+                - пълнота (намирам ли решение): l == d; l < d => no
+                - сложност по време (брой изследвани възли): b^l
+                - сложност по памет: b*l
+                - оптималност: l == d => yes, else no
+            - IDS (Iterative-Deepening): намира d, чрез итеративно увеличаване на l:
+                - пълнота (намирам ли решение): yes, if b != inf
+                - сложност по време (брой изследвани възли): b^d
+                - сложност по памет: b*d
+                - оптималност: yes
+        - BFS (по нива):
+            - пълнота: Не, ако b == inf. Else, yes
+            - сложност по време (брой изследвани възли): b^d
+            - сложност по памет: b^d
+            - оптималност: yes
+            - UCS (uniform-cost search): (sort frontier accourding to g(n))
+                - пълнота: Yes, but g(n) has to be valid, ie. g(n) > 0 (g(n = eps))
+                - сложност по време (брой изследвани възли): b^[C* / eps]
+                - сложност по памет: b^[C* / eps]
+                - оптималност: yes
+
+
+    - informed
+        - Heuristic: 5 0, 8 0 ; goal
+        - Best-First search (expands node with min h(n)):
+                - пълнота: No
+                - сложност по време (брой изследвани възли): b^d
+                - сложност по памет: b^d
+                - оптималност: Yes
+        - A* (f(n) = h(n) + g(n)):
+                - пълнота: Yes
+                - сложност по време (брой изследвани възли): b^d
+                - сложност по памет: b^d
+                - оптималност: Yes
+
+Beyond Classical
+- Hill climbing (expands only one 1 node, without keeping track of anything)
+    - l^d
+- Beam search (hill climging with more info)
+- Genetic algorithms (how to crossover!!)
+    - 8-queens
+
+Adversial Search === Games
+- Mini-max
+    - Alpha-beta
+- term: optimal opponent:
+    - doesn't make mistakes
+    - chooses the best action
+    - не използва заблуждаващи стратегии
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Types of agents:
+ - прост рефлекторен -> If-else
+ - агент, основан на модел на света -> if-else + what the world will be like if I take action A
+ - основан на цели -> solve a problem
+ - за полезност-> if-else + what the world will be like if I take action A + how will I feel if I take action A
+
+основан на цели -> solve a problem:
+    - searching agents / problem-solving agents
+        - path from start to goal
+        - state -> текущо състояние на проблем
+        start -> x^2 + 2x = 1
+        next state -> x^2 + 2x - 1 = 0
+        ....
+        goal x1 = ?, x2 = ?
+        - operator => как преминавам от дn към дn+1
+        - g(n) -> Total Path Cost
+        - h(n) -> Heuristic
+            - 0 < h(n) <= real cost
+        - parent
