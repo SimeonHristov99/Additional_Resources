@@ -1,0 +1,68 @@
+Plan Of Attack:
+
+- Everything will be recorded.
+- Everything will be uploaded to GitHub.
+
+1. What is an ontology?
+	World's Largest Ontology: https://en.wikipedia.org/wiki/Cyc
+	A graph whose nodes and arcs store information about a given domain/object. In our case the graph will be a tree.
+2. What is its goal?
+	Exchange information between mutually exclusive sources (kind of like XML).
+3. About the desing pattern we're going to use.
+	We'll split our ontology into two superclasses. ValuePartition and DomainThing. However, there're other ways in which an ontology could be built. For example, you can skip the domain separation.
+4. What is DomainThing?
+	DomainThing describes all domains (classes which are not terminal, i.e. leaf) we are working with.
+5. What is ValuePartition?
+	ValuePartition describes every leaf class in a certain domain. Here it is the Toppings domain.
+6. Advice for the subject of your ontologies.
+	Pick an object that has at least two qualities each of which has multiple variants.
+7. What is a primitive class?
+	Class that only has neccessary conditions (that are not stated to be equivalent to anything).
+8. What is a defined class?
+	Class that only has neccessary and sufficient conditions (that has an equivalent).
+9. What are object properties?
+	Relationships between classes. In OWL we can actually use leaf classes as simulators of individuals.
+10. What are datatype properties?
+	Relationships between classes and data type values (ex. hasDrivinglicence -> true).
+11. What are disjoint classes?
+	Classes that cannot the same individuals.
+12. On the different types of relationships.
+	Functional:
+		x -> y && x -> z ->? y === z
+		
+	Reverse Functional:
+		x -> y && z -> y ->? x === z
+		
+	Transitive:
+		x -> y && y -> z ->? x -> z
+		
+	Symmetric:
+		x -> y ->? y -> x
+
+	Asymmetric:
+		x -> y ->? y is not rel x
+		
+	Reflexive:
+		x -> y ->? x -> x && y -> y
+		
+	Irreflexive:
+		x -> y ->? x is not rel x && y is not rel y
+
+    A man drives a car.
+
+    relationships: drive
+        - domain: Man
+        - range: Car
+
+    domain of a relationship: Who?
+    range of a relationship: What?
+
+Our domain: https://en.wikipedia.org/wiki/Ice_cream
+Our goal: Classify a named ice cream based on its toppings, country of origin and base.
+
+Algorithm for making an ontology:
+1. Find an appropriate domain.
+2. Identify ValuePartition.
+3. Identify top-level classes in DomainThing.
+4. Identify relationships.
+5. Add NamedClass and Generalizations in order to produce logical conclusions.

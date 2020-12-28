@@ -1,0 +1,1011 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/work/ontologies/2020/11/untitled-ontology-30"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/work/ontologies/2020/11/untitled-ontology-30">
+    <Prefix name="" IRI="http://www.semanticweb.org/work/ontologies/2020/11/untitled-ontology-30"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Apple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Argentinian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avocado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Banana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeanTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BlackSesame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chinese"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chocolate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoconutMilk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coffee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Durian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Egg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FruitTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gelato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardToppings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Helado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HerbSpiceTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IceCream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IceCreamBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IceCreamTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Italian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jackfruit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lemon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiquidTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mango"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mastic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mochi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MungBean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedIceCream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaturalToppings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonSweetToppings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#None"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noodle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NutTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PalmSugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PandanusLeaves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pistachios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PopularIceCream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedBean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoseWater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strawberry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sugar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SugarSyrup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SweetToppings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sweetness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vanilla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WholeMilk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSweetness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argentina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greece"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indonesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_Zeland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Philippines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_States"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Argentinian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCream"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBase"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Egg"/>
+                    <Class IRI="#Sugar"/>
+                    <Class IRI="#WholeMilk"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#NaturalToppings"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasCountryOfOrigin"/>
+                <NamedIndividual IRI="#Argentina"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Chinese"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#PopularIceCream"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectUnionOf>
+                    <Class IRI="#BlackSesame"/>
+                    <Class IRI="#RedBean"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasCountryOfOrigin"/>
+                <NamedIndividual IRI="#China"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DomainThing"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Argentina"/>
+                <NamedIndividual IRI="#Australia"/>
+                <NamedIndividual IRI="#China"/>
+                <NamedIndividual IRI="#Greece"/>
+                <NamedIndividual IRI="#India"/>
+                <NamedIndividual IRI="#Indonesia"/>
+                <NamedIndividual IRI="#Italy"/>
+                <NamedIndividual IRI="#New_Zeland"/>
+                <NamedIndividual IRI="#Philippines"/>
+                <NamedIndividual IRI="#Spain"/>
+                <NamedIndividual IRI="#Turkey"/>
+                <NamedIndividual IRI="#United_Kingdom"/>
+                <NamedIndividual IRI="#United_States"/>
+            </ObjectOneOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HardToppings"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCreamTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#BeanTopping"/>
+                <Class IRI="#HerbSpiceTopping"/>
+                <Class IRI="#NutTopping"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Italian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCream"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBase"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Egg"/>
+                    <Class IRI="#Sugar"/>
+                    <Class IRI="#WholeMilk"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#NaturalToppings"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasCountryOfOrigin"/>
+                <NamedIndividual IRI="#Italy"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NaturalToppings"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCreamTopping"/>
+            <ObjectComplementOf>
+                <Class IRI="#LiquidTopping"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#NonSweetToppings"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCreamTopping"/>
+            <ObjectComplementOf>
+                <Class IRI="#SweetToppings"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PopularIceCream"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCream"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectUnionOf>
+                    <Class IRI="#Chocolate"/>
+                    <Class IRI="#Coffee"/>
+                    <Class IRI="#Mango"/>
+                    <Class IRI="#Strawberry"/>
+                    <Class IRI="#Vanilla"/>
+                </ObjectUnionOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SweetToppings"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#IceCreamTopping"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasSweetness"/>
+                <Class IRI="#High"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Sweetness"/>
+        <ObjectUnionOf>
+            <Class IRI="#High"/>
+            <Class IRI="#Low"/>
+            <Class IRI="#Medium"/>
+            <Class IRI="#None"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Apple"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Apple"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Argentinian"/>
+        <Class IRI="#IceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avocado"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Banana"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Banana"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeanTopping"/>
+        <Class IRI="#IceCreamTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackSesame"/>
+        <Class IRI="#HerbSpiceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BlackSesame"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chinese"/>
+        <Class IRI="#IceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chocolate"/>
+        <Class IRI="#LiquidTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chocolate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#High"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoconutMilk"/>
+        <Class IRI="#LiquidTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoconutMilk"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee"/>
+        <Class IRI="#BeanTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coffee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cream"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Durian"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Durian"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Egg"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FruitTopping"/>
+        <Class IRI="#IceCreamTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gelato"/>
+        <Class IRI="#NamedIceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gelato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#WholeMilk"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gelato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#Mango"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gelato"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#Italy"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helado"/>
+        <Class IRI="#NamedIceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helado"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#Egg"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helado"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#Mango"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Helado"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#Argentina"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HerbSpiceTopping"/>
+        <Class IRI="#IceCreamTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High"/>
+        <Class IRI="#Sweetness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IceCream"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IceCream"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#IceCreamBase"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IceCreamBase"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IceCreamTopping"/>
+        <Class IRI="#Food"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Italian"/>
+        <Class IRI="#IceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jackfruit"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jackfruit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lemon"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lemon"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiquidTopping"/>
+        <Class IRI="#IceCreamTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low"/>
+        <Class IRI="#Sweetness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mango"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mango"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mastic"/>
+        <Class IRI="#BeanTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mastic"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Sweetness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mochi"/>
+        <Class IRI="#NamedIceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mochi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#BlackSesame"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mochi"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#Vanilla"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mochi"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hasCountryOfOrigin"/>
+            <NamedIndividual IRI="#China"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MungBean"/>
+        <Class IRI="#BeanTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MungBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedIceCream"/>
+        <Class IRI="#IceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#None"/>
+        <Class IRI="#Sweetness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noodle"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NutTopping"/>
+        <Class IRI="#IceCreamTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalmSugar"/>
+        <Class IRI="#LiquidTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalmSugar"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#High"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PandanusLeaves"/>
+        <Class IRI="#HerbSpiceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PandanusLeaves"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pistachios"/>
+        <Class IRI="#NutTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pistachios"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PopularIceCream"/>
+        <Class IRI="#IceCream"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedBean"/>
+        <Class IRI="#BeanTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedBean"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#None"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoseWater"/>
+        <Class IRI="#LiquidTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoseWater"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salep"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strawberry"/>
+        <Class IRI="#FruitTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strawberry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Medium"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sugar"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SugarSyrup"/>
+        <Class IRI="#LiquidTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SugarSyrup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#High"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sweetness"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vanilla"/>
+        <Class IRI="#HerbSpiceTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vanilla"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSweetness"/>
+            <Class IRI="#Low"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WholeMilk"/>
+        <Class IRI="#IceCreamBase"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Apple"/>
+        <Class IRI="#Avocado"/>
+        <Class IRI="#Banana"/>
+        <Class IRI="#Durian"/>
+        <Class IRI="#Jackfruit"/>
+        <Class IRI="#Lemon"/>
+        <Class IRI="#Mango"/>
+        <Class IRI="#Strawberry"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BeanTopping"/>
+        <Class IRI="#FruitTopping"/>
+        <Class IRI="#HerbSpiceTopping"/>
+        <Class IRI="#LiquidTopping"/>
+        <Class IRI="#NutTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BlackSesame"/>
+        <Class IRI="#PandanusLeaves"/>
+        <Class IRI="#Vanilla"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Chocolate"/>
+        <Class IRI="#CoconutMilk"/>
+        <Class IRI="#PalmSugar"/>
+        <Class IRI="#RoseWater"/>
+        <Class IRI="#SugarSyrup"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Coffee"/>
+        <Class IRI="#Mastic"/>
+        <Class IRI="#MungBean"/>
+        <Class IRI="#RedBean"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Cream"/>
+        <Class IRI="#Egg"/>
+        <Class IRI="#Noodle"/>
+        <Class IRI="#Salep"/>
+        <Class IRI="#Sugar"/>
+        <Class IRI="#Water"/>
+        <Class IRI="#WholeMilk"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DomainThing"/>
+        <Class IRI="#ValuePartition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#High"/>
+        <Class IRI="#Low"/>
+        <Class IRI="#Medium"/>
+        <Class IRI="#None"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IceCream"/>
+        <Class IRI="#IceCreamBase"/>
+        <Class IRI="#IceCreamTopping"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Argentina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Indonesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#New_Zeland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Philippines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#United_States"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSweetness"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTopping"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSweetness"/>
+        <Class IRI="#IceCreamTopping"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBase"/>
+        <Class IRI="#IceCreamBase"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#Food"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSweetness"/>
+        <Class IRI="#Sweetness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopping"/>
+        <Class IRI="#IceCreamTopping"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
