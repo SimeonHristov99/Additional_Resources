@@ -243,17 +243,16 @@ Given an whole number list with no duplicates construct a "maximum binary tree".
 
 Test case:
 
-    constructMaxBTree [3, 2, 1, 6, 0, 5] -> t2
+    print $ constructMaxBTree [3, 2, 1, 6, 0, 5] == t2
 
-{- t2:
-       6
-    /     \
-  3         5
-  \         /
-   2      0
-    \
-     1
--}
+    t2:
+           6
+        /     \
+       3       5
+       \       /
+        2    0
+         \
+          1
 
 # Task 10
 Define a function that accepts an infinite list of numbers [x<sub>1</sub>, x<sub>2</sub> .. ] and returns a function that for every x and y calculates the expression (x - x<sub>1</sub>) * (x - x<sub>2</sub>) * .. * (x - x<sub>y</sub>).
