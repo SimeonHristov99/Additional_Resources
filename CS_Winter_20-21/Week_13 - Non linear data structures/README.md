@@ -265,7 +265,11 @@ Test case:
 # Task 11
 The nodes in the following picture resemple the lower and higher bounds of an interval (the first number will always be lower than the second). Define a function that checks whether such a binary tree is ordered according to the relation "subinterval".
 
+![Alt text](task11_1.png?raw=true "task11_1.png")
+
+![Alt text](task11_2.png?raw=true "task11_2.png")
+
 Test cases:
 
-    print $ ordered Node (3.0,10.0) (Node (5.0,8.0) (Node (6.0,7.0) Nil Nil)(Node (4.0,9.0) Nil Nil))(Node (2.0,12.0) Nil (Node (1.0,15.0) Nil Nil) == True
-    print $ ordered Node (3.0,10.0) (Node (5.0,8.0) (Node (6.0,7.0) Nil Nil)(Node (7.0,9.0) Nil Nil))(Node (2.0,12.0) Nil(Node (1.0,15.0) Nil Nil) == False
+    print $ ordered t1 == True
+    print $ ordered t2 == False
