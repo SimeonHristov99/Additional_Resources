@@ -85,30 +85,12 @@ For the following tree complete the actions below:
     - print it;
     - define a function that:
         - returns its size.
-        - returns the number of nodes for which the sum of the children is equal to the grandfather
+        - returns the elements at level k.
 
 Test cases:
 
     print $ t
     print $ size t == 13
-    print $ sumEq t == 2 (nodes 8 and 12)
-
-# Task 4 (not translated on purpose)
-Да се дефинира функция maximize :: (Ord a, Num a) => [(a -> a)] -> (a -> a) , за която оценката на обръщението maximize l , където l е непразен списък от едноместни числови функции, да е едноместна числова функция на аргумент x, която дава стойността f(x) на тази фунция f от списъка l , за която числото f(x) е най-голямо по абсолютна стойност.
-
-Test cases:
-
-    Ако fn = maximize [(\x -> x*x*x),(\x -> x+1)], то:
-    fn 0.5 → 1.5
-    fn (-2) → -8
-    fn (-0.2) → 0.8
-    fn (-5) → (-125)
-
-Explanation of the last test case:
-
-    (-5)*(-5)*(-5) = -125
-    (-5) + 1 = -4
-    | -125 | > | -4 | => -125
 
 # For home
 # Task 1
