@@ -3,19 +3,19 @@ Define a recursive algebraic type called "BTree". A BTree may hold a user-chosen
 
 numberBTree:
 
-![Alt text](task1_1.png?raw=true "task1_1.png")
+![Alt text](pictures/task1_1.png?raw=true "task1_1.png")
 
 charBTree:
 
-![Alt text](task1_2.png?raw=true "task1_2.png")
+![Alt text](pictures/task1_2.png?raw=true "task1_2.png")
 
 Define the following functions:
 
     ​​size - returns the number of nodes;
     sumTree - returns the sum of the nodes (should work only for trees that store numbers in their nodes);​
     traverseDFS​ - prints the nodes using DFS;
-    traverseBFS - prints the nodes using BFS;
     getLevel - accepts a whole number k and returns the nodes at level k (root is at level 0);
+    traverseBFS - prints the nodes using BFS;
     mapTree - maps an unary function to the tree.
 
 Test cases:
@@ -32,12 +32,12 @@ Test cases:
     print $ traverseDFS numberBTree == [96, 1, 12, 0, 5, 2, 4, 5, 21]
     print $ traverseDFS charBTree == "haskell"
 
-    print $ traverseBFS numberBTree == [5,12,4,1,0,2,5,96,21]
-    print $ traverseBFS charBTree == "kalhsel"
-
     print $ getLevel numberBTree 2 == [1, 0, 2, 5]
     print $ getLevel charBTree 1 == "al"
     -- print $ getLevel charBTree 3 -- should not work
+    
+    print $ traverseBFS numberBTree == [5,12,4,1,0,2,5,96,21]
+    print $ traverseBFS charBTree == "kalhsel"
 
     print $ mapTree numberBTree (*2) == Node 10 (Node 24 (Node 2 (Node 192 Nil Nil) Nil) (Node 0 Nil Nil)) (Node 8 (Node 4 Nil Nil) (Node 10 Nil (Node 42 Nil Nil)))
     print $ mapTree charBTree (toUpper) == Node 'K' (Node 'A' (Node 'H' Nil Nil) (Node 'S' Nil Nil)) (Node 'L' (Node 'E' Nil Nil) (Node 'L' Nil Nil))
@@ -80,10 +80,10 @@ Test cases:
 # Task 3
 For the following tree complete the actions below:
 
-![Alt text](task3.png?raw=true "task3.png")
+![Alt text](pictures/task3.png?raw=true "task3.png")
 
     - print it;
-    - define functions that:
+    - define a function that:
         - returns its size.
         - returns the number of nodes for which the sum of the children is equal to the grandfather
 
@@ -148,7 +148,7 @@ For the database in task 2 define a function that:
     - returns the average price of the inventory;
     - takes a quantity and returns all products not available in larger quantities;
     - takes the name and price of a product and returns the number of cheaper alternatives. For the test cases to pass on this point, the database must be db = [("bread", 1000, 1.20), ("milk", 2000, 4.5), ("lamb", 5000, 10), ("cheese", 750, 5), ("lamb", 1000, 5.50), ("water", 500, 0.50), ("lamb", 250, 4.50)];
-    - returns the products priced closest to the average price of all the products. Solve the task with linear time complexity.
+    - returns the products priced closest to the average price of all the products.
 
 Test cases:
 
@@ -162,22 +162,9 @@ Test cases:
     print $ closestToAverage == ["milk","soap"]
 
 # Task 3
-By using the following types define a function that accepts a <strong>non-empty</strong> list of records and returns the hardest subject.
-
-type Student = String<br>
-type Subject = String<br>
-type Note = Double<br>
-type Record = (Student, Subject, Note)
-
-Test case:
-
-    print $ hardestSubject [("John", "Maths", 5), ("Kennedy", "English", 2), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 4), ("Jenn", "English", 2)] == "English"
-    print $ hardestSubject [("John", "Maths", 3), ("Kennedy", "English", 2), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 3), ("Jenn", "English", 5)] == "Maths"
-
-# Task 4
 A colour may be either red, green or blue. Create an instance of the following tree and do the following:
 
-![Alt text](task4.png?raw=true "task4.png")
+![Alt text](pictures/task4.png?raw=true "task4.png")
 
     - print it;
     - define a function that accepts a colour and returns the hight of the highest node of that colour.
@@ -188,11 +175,11 @@ Test cases:
     print $ highest Green colourBTree == 3
     print $ highest Blue colourBTree == 4
 
-# Task 5
+# Task 4
 A tree is gracefull if the absolute difference between a node and its father is an even number. Define a predicate that returns whether a tree is gracefull.
 
-![Alt text](task5_1.png?raw=true "task5_1.png")
-![Alt text](task5_2.png?raw=true "task5_2.png")
+![Alt text](pictures/task5_1.png?raw=true "task5_1.png")
+![Alt text](pictures/task5_2.png?raw=true "task5_2.png")
 
 Test cases:
 
@@ -200,7 +187,7 @@ Test cases:
     print $ isGracefull t2 == True -- t2 = B
     print $ isGracefull t3 == False -- t3 = C
 
-# Task 6
+# Task 5
 By using the following types define a function that accepts a list of records and returns the hardest subject.
 
 type Student = String<br>
@@ -213,7 +200,7 @@ Test case:
     print $ hardestSubject [("John", "Maths", 5), ("Kennedy", "English", 2), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 4), ("Jenn", "English", 2)] == "English"
     print $ hardestSubject [("John", "Maths", 5), ("Kennedy", "English", 5), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 4), ("Jenn", "English", 5)] == "Maths"
 
-# Task 7
+# Task 6
 Let (x, y, z) be a vector representing the nodes of a binary tree such that x is the value of the current node, y and z are the values of the child nodes. Define a function that returns the leaves of such a tree.
 
 Test cases:
@@ -222,7 +209,7 @@ Test cases:
     print $ listLeaves [(2, 4, 5), (1, 2, 3)] == [4, 5, 3]
     print $ listLeaves [(1, 2, 3), (3, 4, 5), (5, 6, 9)] == [2, 4, 6, 9]
 
-# Task 8
+# Task 7
 Define a function that accepts a list of whole number one-argument functions [f<sub>1</sub>, f<sub>2</sub> .. f<sub>n</sub>] and returns a function that for every "x" calculates the composition of the functions with odd indices: f<sub>1</sub>(f<sub>3</sub>(...(f<sub>n</sub>x)...)).
 
 Test case:
@@ -234,7 +221,7 @@ Note:
     For a "Yes", you must solve the task with one line of code!
     For a "Yes", you must solve the task with folding!
 
-# Task 9
+# Task 8
 Given an whole number list with no duplicates construct a "maximum binary tree". We say that a binary tree is a "maximum binary tree" if:
 
     The root is the maximum number in the list.
@@ -254,7 +241,7 @@ Test case:
          \
           1
 
-# Task 10
+# Task 9
 Define a function that accepts an infinite list of numbers [x<sub>1</sub>, x<sub>2</sub> .. ] and returns a function that for every x and y calculates the expression (x - x<sub>1</sub>) * (x - x<sub>2</sub>) * .. * (x - x<sub>y</sub>).
 
 Test case:
@@ -262,12 +249,12 @@ Test case:
     If g is myPoly [2.7, 3.0 ..]
         then g 2.2 3 -> -0.4399999999999998
 
-# Task 11
+# Task 10
 The nodes in the following picture resemple the lower and higher bounds of an interval (the first number will always be lower than the second). Define a function that checks whether such a binary tree is ordered according to the relation "subinterval".
 
-![Alt text](task11_1.png?raw=true "task11_1.png")
+![Alt text](pictures/task11_1.png?raw=true "task11_1.png")
 
-![Alt text](task11_2.png?raw=true "task11_2.png")
+![Alt text](pictures/task11_2.png?raw=true "task11_2.png")
 
 Test cases:
 
