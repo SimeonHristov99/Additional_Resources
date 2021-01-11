@@ -2,9 +2,11 @@
 Define *numberTreeBefore* using a constructor. Define a function that inserts a node in a binary search tree. By using it construct the same tree and check their equality. Define *secondNumberTree* using insert.
 
 numberTreeBefore:
+
 ![Alt text](pictures/task1_1.png?raw=true "task1_1.png")
 
 secondNumberTree:
+
 ![Alt text](pictures/task1_2.png?raw=true "task1_2.png")
 
 Test cases:
@@ -20,11 +22,11 @@ Define a function that checks whether a word is present in a binary tree made up
 
 Trees:
 
-   t1:  a
-       / \
-      c   b
-     / \   \
-    f   d   e
+    t1:    a
+          / \
+         c   b
+        / \   \
+       f   d   e
 
     t1 :: BTree Char
     t1 = Node 'a' (Node 'c' (Node 'f' Nil Nil) (Node 'd' Nil Nil)) (Node 'b' Nil (Node 'e' Nil Nil))
@@ -54,11 +56,11 @@ Define a function that returns all possible word combinations from a binary tree
 
 Trees:
 
-   t1:  a
-       / \
-      c   b
-     / \   \
-    f   d   e
+    t1:    a
+          / \
+         c   b
+        / \   \
+       f   d   e
 
     t1 :: BTree Char
     t1 = Node 'a' (Node 'c' (Node 'f' Nil Nil) (Node 'd' Nil Nil)) (Node 'b' Nil (Node 'e' Nil Nil))
@@ -80,11 +82,11 @@ Define a function that returns all words contained in all of the trees passed as
 
 Trees:
 
-   t1:  a
-       / \
-      c   b
-     / \   \
-    f   d   e
+    t1:    a
+          / \
+         c   b
+        / \   \
+       f   d   e
 
     t1 :: BTree Char
     t1 = Node 'a' (Node 'c' (Node 'f' Nil Nil) (Node 'd' Nil Nil)) (Node 'b' Nil (Node 'e' Nil Nil))
@@ -110,9 +112,11 @@ Test cases:
 Define a new data type representing a binary tree of whole numbers. By using it, firstTree and secondTree define a function that returns the sum of the nodes with values between L and R (inclusive).
 
 firstTree:
+
 ![Alt text](pictures/fh_task1_1.png?raw=true "fh_task1_1.png")
 
 secondTree:
+
 ![Alt text](pictures/fh_task1_2.png?raw=true "fh_task1_2.png")
 
 Test cases:
@@ -136,9 +140,11 @@ Test case:
 Convert a binary tree to a binary indexed tree.
 
 tree:
+
 ![Alt text](pictures/fh_task3_1.png?raw=true "fh_task3_1.png")
 
 treeResult:
+
 ![Alt text](pictures/fh_task3_2.png?raw=true "fh_task3_2.png")
 
 Test case:
@@ -174,6 +180,7 @@ a) Да се дефинира функция levelsum t k, която намир
 b) Да се дефинира функция cone t, която проверява дали двоичното дърво t е конус.
 
 numberBTree:
+
 ![Alt text](pictures/fh_task5.png?raw=true "pictures/fh_task5.png")
 
 Test cases:
