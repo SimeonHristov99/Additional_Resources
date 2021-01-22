@@ -81,6 +81,15 @@ Here is the algorithm:
 
 Test cases:
 
+    (equal? (validate 1714) #f)
+    (equal? (validate 12345) #f)
+    (equal? (validate 891) #f)
+    (equal? (validate 123) #f)
+    (equal? (validate 2121) #t)
+    (equal? (validate 4736778291034) #t)
+    (equal? (validate 4485756008412) #t)
+    (equal? (validate 4214154976719) #t)
+
     print $ validate 1714 == False
     print $ validate 12345 == False
     print $ validate 891 == False

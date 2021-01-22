@@ -9,6 +9,20 @@
     - What case would return an error?
     - Can we write down the steps to solve it?
 
+    1. What is the name of the procedure/function?
+    2. How many parameters does it take?
+    3. What is the type of the parameters?
+    4. What are the names of the parameters?
+    5. What is the return type?
+    6. How would you solve it on a sheet of paper?
+
+    1. Какво е името на процедурата/функцията?
+    2. Колко параметъра приема?
+    3. Какъв е типът на параметрите?
+    4. Какви са имената на параметрите?
+    5. Какво трябва да се върне?
+    6. Как бихте решили задачата, ако нямахте компютър, а само лист и химикал?
+
 # In case of a wrong result in Racket
     - check procedure application => should be prefix
     - procedure <=> parenthasis
