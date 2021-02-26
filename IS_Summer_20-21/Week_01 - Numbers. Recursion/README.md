@@ -65,14 +65,12 @@ Test cases:
     print $ factIter 11 == 39916800
 
 # Task 4
-Define a recursive and an iterative function for calculating the number at index *i* in the Fibonacci sequence (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...).
+Define a recursive function for calculating the number at index *i* in the Fibonacci sequence (0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...).
  - add a test case with a negative number.
 
 Test cases:
 
     print $ fib 11 == 89
-    print $ fibIter 11 == 89
-    print $ fibIter 110 == 43566776258854844738105
 
 # For home
 # Task 1

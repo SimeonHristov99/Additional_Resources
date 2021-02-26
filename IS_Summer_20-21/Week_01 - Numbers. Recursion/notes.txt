@@ -7,7 +7,7 @@
     - use {--} for multiline comments
     - only for human-readable text!
  - everything is a function here!
-    - read the following: a = 5
+    - read the following: a = 5 (a :: Int)
     - a++, ++a <- invalid. use (a + 1)
  - use camel case to name identifiers, i.e. myFunction
  - #include ... (C++) -> import ... (Haskell)
@@ -43,7 +43,7 @@
  - artimetic:  +, -, * (Only for variables of the same type, i.e. n * m will give an error if n is Int and m - Double)
  
  - division:
-    - for whole numbers
+    - for whole numbers:
         - quotient: div (ex. div 10 5 == 2; div 123 10 == 12)
         - remainder: mod (ex. mod 10 5 == 0; mod 123 10 == 3) (equavalent to % in C++)
     - real numbers:
