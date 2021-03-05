@@ -51,10 +51,11 @@ Define a recursive and an iterative function for calculating *x* to the power of
 
 Test cases:
 
-    print $ powRec 2 5
-    print $ powRec 15 3
-    print $ powIter 2 5
-    print $ powIter 15 3
+    print $ powRec 2 5 == 32
+    print $ powRec 15 3 == 3375
+    print $ powIter 2 5 == 32
+    print $ powIter 15 3 == 3375
+    --print $ powRec 2 0 == 1 -- should return an error
 
 # Task 6
 Define a predicate that checks whether a number is prime.
