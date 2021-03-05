@@ -210,7 +210,8 @@ Define a function that takes two numbers and returns the number of palindromes b
 
 Test cases:
 
-    countPalindromes 5 13
+    print $ countPalindromes 5 13 == 5 -- 6 7 8 9 11
+    print $ countPalindromes 13 5 == 5 -- 6 7 8 9 11
 
 # Task 13
 Define a predicate that accepts a number and returns if and only if the number is prime **and** every number that is produced by removing digits from right to left is prime.
