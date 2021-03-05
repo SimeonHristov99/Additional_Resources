@@ -274,7 +274,7 @@ Test cases:
     print $ isSpecial 353 2 == False
 
 # Task 17
-Define a function that takes a whole number and returns its ascending left suffix.
+Define a function that takes a whole number and returns its ascending right suffix.
 
 Test cases:
 
