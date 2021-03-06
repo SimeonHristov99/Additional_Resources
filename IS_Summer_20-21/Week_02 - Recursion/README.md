@@ -130,7 +130,7 @@ Hint:
 
     A number is perfect if and only if it is natural and equal to the sum of its divisors that are less than n.
 
-# Task 6
+# Task 5
 Define a predicate that checks whether the digits of a non-negative whole number are ordered in an ascending order.
 
 Test cases:
@@ -138,7 +138,7 @@ Test cases:
     print $ hasIncDigits 1244 == True
     print $ hasIncDigits 12443 == False
 
-# Task 7
+# Task 6
 Define a predicate that checks whether two numbers are amicable.
 
 Test cases:
@@ -154,14 +154,14 @@ Hint:
 
     Two numbers are amicable if the sum of the divisors of one of them is equal to the other.
 
-# Task 8
+# Task 7
 A number is interesting if and only if it is evenly divided by the sum of its digits. Define a predicate that checks whether a number is interesting.
 
 Test case:
 
     print $ isInteresting 410 == True
 
-# Task 9
+# Task 8
 Given a divisor *d* and a bound *b*, find the largest integer *N*, such that:
 
     *N* is divisible by *d*
@@ -177,7 +177,7 @@ Test cases:
     print $ maxMultiple 37 200 == 185
     print $ maxMultiple 7 100 == 98
 
-# Task 10
+# Task 9
 Write a function that removes the digit d from the number n.
 
 Test cases:
@@ -189,7 +189,7 @@ Test cases:
     print $ removeD 0 600 == 6
     print $ removeD 6 600 == 0
 
-# Task 11
+# Task 10
 Write a function that forms a number from every other digit starting from the right of an integer n (n >= 10).
 
 Test cases:
@@ -205,7 +205,7 @@ Test cases:
     print $ everyOther 448575 == 784
     print $ everyOther 4214 == 14
 
-# Task 12
+# Task 11
 Define a function that takes two numbers and returns the number of palindromes between them.
 
 Test cases:
@@ -213,7 +213,7 @@ Test cases:
     print $ countPalindromes 5 13 == 5 -- 6 7 8 9 11
     print $ countPalindromes 13 5 == 5 -- 6 7 8 9 11
 
-# Task 13
+# Task 12
 Define a predicate that accepts a number and returns if and only if the number is prime **and** every number that is produced by removing digits from right to left is prime.
 
 Test cases:
@@ -221,7 +221,7 @@ Test cases:
     print $ truncatablePrime 3797 == True -- 3797, 379, 37 and 3 are all prime
     print $ truncatablePrime 47 == False -- 47 is prime, but 4 is not
 
-# Task 14
+# Task 13
 Write a function that accepts three whole numbers - a, b and n (n > 3) and returns the **sum** of the **last three** numbers from the following sequence.
 
 ![Alt text](task14.png?raw=true "task14.png")
@@ -249,7 +249,7 @@ Note:
 
     n will always be > 3.
 
-# Task 15
+# Task 14
 Write a function that accepts an integer and checks whether it is a square of a number **WITHOUT** using *sqrt*.
 
 Test cases:
@@ -261,7 +261,7 @@ Test cases:
     print $ isSquare 256 == True
     print $ isSquare 2500 == True
 
-# Task 16
+# Task 15
 Write a function that accepts an integer *n* and a whole number *k* and checks whether every *k* digits from *n* are prime.
 
 Test cases:
@@ -273,7 +273,7 @@ Test cases:
     print $ isSpecial 10113 3 == True
     print $ isSpecial 353 2 == False
 
-# Task 17
+# Task 16
 Define a function that takes a whole number and returns its ascending right suffix.
 
 Test cases:
@@ -283,7 +283,7 @@ Test cases:
     print $ reverseOrdSuff 32567 == 7
     print $ reverseOrdSuff 32666 == 6
 
-# Task 18
+# Task 17
 Define a procedure *sumSpecialPrimes n d* that returns the sum of the first *n* prime numbers that contain a digit *d*.
 
 Test cases:
