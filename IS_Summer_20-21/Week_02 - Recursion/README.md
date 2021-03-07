@@ -236,13 +236,13 @@ Explanations:
 In the first example a = 0, b = 2, n = 10. The resulting sequence is therefore s0, s1, s2, ...
  - s0 = 0 + 1 * 2 = 2
  - s1 = 0 + 1 * 2 + 2 * 2 = 6
- - s2 = 0 + 1 * 2 + 2 * 2 + 4 * 2 = 14
+ - s2 = 0 + 1 * 2 + 2 * 2   + 4 * 2 = 14
  and so on.
 
 In the second example a = 5, b = 3, n = 5. The resulting sequence is therefore s0, s1, s2, ...
- - s0 = 5 + 1 * 3 = 2
- - s1 = 5 + 1 * 3 + 2 * 3 = 6
- - s2 = 5 + 1 * 3 + 2 * 3 + 4 * 3 = 14
+ - s0 = 5 + 1 * 3 = 8
+ - s1 = 5 + 1 * 3 + 2 * 3 = 14
+ - s2 = 5 + 1 * 3 + 2 * 3 + 4 * 3 = 26
  and so on.
 
 Note:
