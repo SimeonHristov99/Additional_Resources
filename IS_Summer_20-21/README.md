@@ -7,7 +7,7 @@
     4. What is the return type?
     5. What are the names of the arguments?
     6. When should an error be returned?
-    7. How would you solve it on a sheet of paper?
+    7. List the steps that would solve the problem.
 
 # Additional links
  - Book (read chapters [1 .. 8]): http://learnyouahaskell.com/chapters

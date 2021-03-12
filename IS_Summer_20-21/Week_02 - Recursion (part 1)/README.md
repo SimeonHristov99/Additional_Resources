@@ -92,9 +92,7 @@ Implementation detail:
 
 Test cases:
 
-    --print $ countDigitsRec (-13) -- error "n was negative"
-    print $ countDigitsRec 12345 == 5
-    print $ countDigitsRec 123 == 3
+    --print $ countDigitsIter (-13) -- error "n was negative"
     print $ countDigitsIter 12345 == 5
     print $ countDigitsIter 123 == 3
 
@@ -112,8 +110,10 @@ Define a function that returns the sum of all prime divisors of a given number.
 
 Test cases:
 
+    print $ sumPrimeDivs 0 == 0
     print $ sumPrimeDivs 6 == 5 -- 2 + 3
     print $ sumPrimeDivs 18 == 5 -- 2 + 3
+    print $ sumPrimeDivs 19 == 19
     print $ sumPrimeDivs 45136 == 53
 
 # Task 4
@@ -267,6 +267,7 @@ Write a function that accepts an integer *n* and a whole number *k* and checks w
 Test cases:
 
     print $ isSpecial 131 2 == True
+    print $ isSpecial (-131) 2 == True
     print $ isSpecial 472 2 == False
     print $ isSpecial 17197 2 == True
     print $ isSpecial 12234 3 == False
