@@ -164,5 +164,5 @@ Submit a .hs file with a working solution and a comment explaining why the probl
 
 Hint:
 
-    Try and run the following test case:
+    Run the following test case:
     removeFistOccurrence 8910 9
