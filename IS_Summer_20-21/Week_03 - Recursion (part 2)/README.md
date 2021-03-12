@@ -106,7 +106,7 @@ Define a function that accepts two real numbers and calculates the n-th partial 
 
 Test cases:
 
-    print $ calcSeriesSum 1 0 == -2.0
+    print $ calcSeriesSum 1 0 == -2.0 -- x = 1, n = 0
     print $ calcSeriesSum 1 1 == -0.6666666666666667
     print $ calcSeriesSum 1 2 == -1.2000000000000002
     print $ calcSeriesSum 1 3 == -1.047619047619048
@@ -119,7 +119,7 @@ Define a predicate that accepts two non-negative inputs - *x* and *y* and checks
 
 Test cases:
 
-    print $ subNum 123 5123783 == True
+    print $ subNum 123 5123783 == True -- x = 123, y = 5123783
     print $ subNum 0 0 == True
     print $ subNum 10 101 == True
     print $ subNum 101 101 == True
@@ -154,7 +154,7 @@ Reference the formula for writing sin(x) around the origin:
 
 Test cases:
 
-    print $ mySin 100 1 == 0.8414709848078965
+    print $ mySin 100 1 == 0.8414709848078965 -- n = 100, x = 1
     print $ mySin 100 0.5 == 0.479425538604203
 
 # Task 6
