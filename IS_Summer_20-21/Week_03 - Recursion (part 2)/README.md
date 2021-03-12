@@ -156,3 +156,13 @@ Test cases:
 
     print $ mySin 100 1 == 0.8414709848078965
     print $ mySin 100 0.5 == 0.479425538604203
+
+# Task 6
+Imagine that you landed a job as a Quality Assurance (QA) Engineer. Your job is to find bugs in programs. While going through the tasks we solved this week, you notice that the last solution does not pass all of your tests. Your task is to help your team by finding out why this problem happened and suggest how might the developers fix it.
+
+Submit a .hs file with a working solution and a comment explaining why the problem occurred.
+
+Hint:
+
+    Try and run the following test case:
+    removeFistOccurrence 8910 9
