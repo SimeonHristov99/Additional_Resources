@@ -106,6 +106,7 @@ Define a function that accepts two real numbers and calculates the n-th partial 
 
 Test cases:
 
+    -- you may get slightly different results eg. -1.047619047619100 on test 4 <- not a problem
     print $ calcSeriesSum 1 0 == -2.0 -- x = 1, n = 0
     print $ calcSeriesSum 1 1 == -0.6666666666666667
     print $ calcSeriesSum 1 2 == -1.2000000000000002
