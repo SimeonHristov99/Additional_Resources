@@ -65,7 +65,7 @@
     - concat [1, 2, 3] [4, 5, 6] => [1, 2, 3, 4, 5, 6]
 
  - length [1, 2, 3] => 3
- - reverse [1 2 3] => [3 2 1]
+ - reverse [1, 2, 3] => [3, 2, 1]
  - sum [1 .. 5] = 15 (The sum of all elements)
  - product [1 .. 5] = 120 (The product of all elements)
  - minimum [2, 5, 6, 2, 1, 2, 6, 0, 45] => 0
@@ -82,7 +82,7 @@
  - Sort the elements of a list in ascending order: sort [5, 4 .. 1] => [1, 2, 3, 4, 5]
 
  - The group function takes a list and returns a list of lists such that the concatenation of the result is equal to the argument. Moreover, each sublist in the result contains only equal elements. For ex
-      group "Mississippi" => ["M","i","ss","i","ss","i","pp","i"]
+      group "Mississippi" => ["M","i","ss","i","ss","i","pp","i"] -- [String] [[Char]]
 
  - replicate :: Int -> a -> [a]
       replicate 5 10 -> [10,10,10,10,10]
@@ -93,6 +93,7 @@
 ################################################################################
  - type String = [Char]
  - Convert a number to a string: show 15 == "15" == ['1', '5']
+ - Convert a string to a number: read "15" == 15
  - Convert a character to a digit: digitToInt '5' -> 5 (part of Data.Char)
 
 
@@ -112,9 +113,11 @@
 
 Definition: A function that accepts at least one function as a parameter and/or returns a function.
 
- - map    (\ x -> x + 10)        [1 .. 6]     => [11, 12, 13, 14, 15, 16] (eqiv. map (+10) [1 .. 6])
- - filter (\ x -> even x)        [1 .. 6]     => [2, 4, 6] (eqiv. filter even [1 .. 6])
- - all    (\ x -> odd x)         [1 .. 6]     => False
- - all    (\ x -> odd x)         [2, 4, 6]    => True
- - any    (\ x -> odd x)         [2, 4, 6]    => False
- - any    (\ x -> mod x 10 == 0) [20, 44, 61] => True
+(\ x -> x)
+
+ - map    (\ x -> x + 10)         [1 .. 6]     => [11, 12, 13, 14, 15, 16] (eqiv. map (+10) [1 .. 6])
+ - filter (\ x -> even x)         [1 .. 6]     => [2, 4, 6] (eqiv. filter even [1 .. 6])
+ - all    (\ x -> odd x)          [1 .. 6]     => False
+ - all    (\ x -> even x)         [2, 4, 6]    => True
+ - any    (\ x -> odd x)          [2, 4, 6]    => False
+ - any    (\ x -> mod x 10 == 0)  [20, 44, 61] => True
