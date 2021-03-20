@@ -175,7 +175,7 @@ Test cases:
     print $ isPresentFunc 0 [0, -1, 2] == True
 
 # Task 3
-Define a function that returns a list of the prime numbers with three digits in a given interval.
+Define a function that returns a list of the prime numbers with at least three digits in a given interval.
 
 Implementation detail:
 
