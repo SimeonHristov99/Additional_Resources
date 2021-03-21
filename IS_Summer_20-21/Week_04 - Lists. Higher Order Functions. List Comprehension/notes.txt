@@ -39,7 +39,7 @@
 
     - get all the wagons of the train
         - (x:xs) => xs is the tail
-        - tail [1, 2, 3] => 3
+        - tail [1, 2, 3] => [2, 3]
         - tail [1 .. 5] = [2, 3, 4, 5]
 
     - the ith element
@@ -55,9 +55,9 @@
 
  - is a given element in a list?
     - elem x xs
-        - elem 1 [16 2 3 4] => False
-        - elem 1 [14 2 1 4] => True
-        - elem 1 [1 2 3 4] => True
+        - elem 1 [16, 2, 3, 4] => False
+        - elem 1 [14, 2, 1, 4] => True
+        - elem 1 [1, 2, 3, 4] => True
 
 
  - combine the elements of n lists
