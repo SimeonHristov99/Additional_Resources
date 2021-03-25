@@ -140,7 +140,7 @@ Implementation detail:
 
     - Solve using a linearly recursive process WITHOUT pattern matching.
     - Solve using a linearly recursive process WITH pattern matching.
-    - Solve using higher order functions.
+    - Solve using functions that work with lists.
 
 Test cases:
 
@@ -158,7 +158,7 @@ Implementation detail:
 
     - Solve using a linearly recursive process WITHOUT pattern matching.
     - Solve using a linearly recursive process WITH pattern matching.
-    - Solve using higher order functions.
+    - Solve using functions that work with lists.
 
 ## IF-ELSE IS FORBIDDEN!!
 
