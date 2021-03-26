@@ -2,9 +2,9 @@
 # Lambda Expressions
 ################################################################################
 
-- function without a name (anonymous)
+- functions without a name (anonymous)
     - have to be called immediately
-    - called arrow function in JS, TS, Frontend Frameworks
+    - called arrow functions in JS, TS, Frontend Frameworks
     - in python: lambda x : x + 1
     - in C++: https://www.youtube.com/watch?v=mWgmBBz0y8c
 
@@ -12,23 +12,25 @@
     - (\ <parameters> -> <function application>)
 
 - a lambda that adds 5 to a number:
-print $ ??? 10 == 15
+print $ (\ x -> x + 5) 10 == 15
 
 - a lambda-predicate that checks whether a number is greater than 10:
-print $ ??? 10 == False
+print $ (\ x -> x > 10) 10 == False
 
 - a lambda which adds three numbers:
-print $ ??? 10 20 30 == 60
+print $ (\ x y z -> x + y + z) 10 20 30 == 60
 
-- What is an unary function? ???
-- What is a binary function? ???
-- Can you give examples? unary: ???, binary: ???
+- What is an unary function? Functions that take 1 argument.
+- What is a binary function? Functions that take 2 arguments.
+- Can you give examples? unary: fact, isPrime, binary: +, -, *
+
 
 ################################################################################
 # Function Composition
 ################################################################################
 
 Composition of f and g over x: Apply f over the result of applying g over x.
+
 
 ################################################################################
 # Tuples (Vectors) (Ordered pairs)
@@ -42,14 +44,17 @@ Composition of f and g over x: Apply f over the result of applying g over x.
 Examples:
 a vector with two coordinates representing a point in 2D space:
 type Point2D = (Int, Int)
+-- typedef vec std::vector<std::string>
 
 Now every function that accepts a Point2D will look like this:
 
-helper :: Point2D -> Int
+helper :: Point2D -> Int -- (Int, Int) -> Int
 helper (x, y) = x + y -- this function sums up the coordinates. Notice the pattern matching!
+-- helper x = fst x + snd x
 
 Notice:
 type String = [Char]
+
 
 ################################################################################
 # Type classes
@@ -63,6 +68,6 @@ old:
 helper :: Int -> Int
 
 new:
-helper :: (Num a) => a -> a
+helper :: (Num a, Num b) => a -> b
 
 In most cases the compiler will help us. Will demostrate how this works today! (exercise 3)

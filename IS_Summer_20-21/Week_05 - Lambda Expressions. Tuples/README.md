@@ -151,6 +151,10 @@ Test cases:
     print $ isArithmentic [3, 5, 7, 9, 11] == True
     print $ isArithmentic [3, 5, 8, 9, 11] == False
 
+Hint:
+
+    You may find the operator "!!" useful :).
+
 # Task 3
 Define a function that returns the sum of the special numbers in the interval [a, b] (a <= b). A number is special if it contains 6 and can be expressed as 4k + 1, where k is a whole number.
 
