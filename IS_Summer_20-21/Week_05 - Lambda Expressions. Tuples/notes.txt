@@ -28,7 +28,7 @@ print $ ??? 10 20 30 == 60
 # Function Composition
 ################################################################################
 
-Composition of f and g over x: Apply g over the result of applying f over x.
+Composition of f and g over x: Apply f over the result of applying g over x.
 
 ################################################################################
 # Tuples (Vectors) (Ordered pairs)

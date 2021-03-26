@@ -6,6 +6,10 @@ Define a function that accepts:
  - returns a function that is the partial application of f over x;
  - (\ x y z -> x y z) (\ x y -> x + y) 5 6 -- What will the output be?
 
+Implementation detail:
+
+    Use type annotations!
+
 Test cases:
 
     print $ (myLambda (\ x -> x)) 5 == 5
