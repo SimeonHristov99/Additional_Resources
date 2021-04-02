@@ -57,19 +57,6 @@ Test cases:
     print $ hardestSubject [("John", "Maths", 5), ("Kennedy", "English", 2), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 4), ("Jenn", "English", 2)] == "English"
     print $ hardestSubject [("John", "Maths", 5), ("Kennedy", "English", 5), ("Joe", "Programming", 4), ("Claudia", "Programming", 6), ("Sam", "Maths", 4), ("Jenn", "English", 5)] == "Maths"
 
-# Task 6
-Define a function that accepts a number and returns the tuple (x, y) where x is the sum of the digits on even indices of the number and y - the sum of the ones on odd indices.
-
-Test cases:
-
-    print $ checkNumber 2728 == (4,15)
-    print $ checkNumber 31415 == (12,2)
-    print $ checkNumber 121 == (2,2)
-
-Implementation detail:
-    
-    Solve the task with one line of code using folding.
-
 # For home
 # Task 1
 Define a function *rf* that takes two unary, whole-number functions as parameters - *f* and *g* and returns a binary function that takes a list - *xs* as its first argument, and an unary function - *h* as its second argument. The result from the call to *rf* should be a list containing elements of the form *h(x)* where *x* spans *xs* and *f(x) > g(x)*.
@@ -188,3 +175,16 @@ Test case:
 
     print $ reduceStr "dabAcCaCBAcCcaDD" == "dabCBAcaDD" -- dabAcCaCBAcCcaDD -> dabAaCBAcCcaDD -> dabCBAcCcaDD -> dabCBAcaDD
                                                                 ^^                 ^^                   ^^
+
+# Task 10
+Define a function that accepts a number and returns the tuple (x, y) where x is the sum of the digits on even indices of the number and y - the sum of the ones on odd indices.
+
+Test cases:
+
+    print $ checkNumber 2728 == (4,15)
+    print $ checkNumber 31415 == (12,2)
+    print $ checkNumber 121 == (2,2)
+
+Implementation detail:
+    
+    Solve the task with one line of code using folding.
