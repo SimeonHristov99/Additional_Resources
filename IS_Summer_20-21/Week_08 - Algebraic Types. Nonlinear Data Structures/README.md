@@ -130,9 +130,9 @@ Note:
 By using the "Shape" data type, define two functions that accept a list of shapes and:
 
     1. The first returns their areas;
-    2. The second returns the shapes with the biggest areas.
+    2. The second returns the shape with the biggest area. !! SOLVE USING FOLDING !!
 
 Test cases:
 
     print $ getAreas [Circle 5, Rectangle 2.5 4.5, Rectangle 5.5 20.6, Triangle 5.3 3.9 4.89, Cylinder 20 30] == [78.53981633974483,11.25,113.30000000000001,9.127927385194024,6283.185307179587]
-    print $ maxArea [Circle 5, Rectangle 2.5 4.5, Rectangle 5.5 20.6, Triangle 5.3 3.9 4.89, Cylinder 20 30] == [Cylinder 20.0 30.0]
+    print $ maxArea [Circle 5, Rectangle 2.5 4.5, Rectangle 5.5 20.6, Triangle 5.3 3.9 4.89, Cylinder 20 30] == Cylinder 20.0 30.0
