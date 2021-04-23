@@ -1,5 +1,5 @@
 # Task 1
-Define a new **polymorphic** data type called "Point". A point may have two or three dimensions. Create an instance for every dimension and print it.
+Define a new **polymorphic** algrebraic data type called "Point". A point may have two or three dimensions. Create an instance for every dimension and print it.
 
 ## By using the "Point" data type, complete tasks 2 and 3.
 
@@ -49,7 +49,7 @@ Your tasks are:
 Test cases:
 
     print $ db
-    print $ getTotal db == 31.2
+    print $ getTotal == 70825.0
     print $ "Buying 500 bread:"
     print $ buy "bread" 500 db
     print $ "Buying 500 water:"
