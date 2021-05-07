@@ -118,7 +118,7 @@ For the trees in task 1 (that we solved in class) define the following functions
     ​​height (number of nodes along the longest branch);​
     average - returns the average of the nodes (should work only for trees that store numbers in their nodes);
     ​​sumLeaves​ - returns the sum of the leaves (should work only for trees that store numbers in their nodes);
-    areEqual - checks whether two trees are identical;
+    areEqual - checks whether two trees are identical (!! USING '==' IS FORBIDDEN !!);
     setLevels - replaces the values in all nodes with the vector ("level", "value");
     mirrorTree - returns the symmetric tree.
 
