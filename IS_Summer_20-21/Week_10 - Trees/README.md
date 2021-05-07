@@ -34,7 +34,7 @@ Test cases:
 
     print $ getLevel numberBTree 2 == [1, 0, 2, 5]
     print $ getLevel charBTree 1 == "al"
-    -- print $ getLevel charBTree 3 -- should not work
+    print $ getLevel charBTree 3 == []
     
     print $ traverseBFS numberBTree == [5,12,4,1,0,2,5,96,21]
     print $ traverseBFS charBTree == "kalhsel"
@@ -51,9 +51,9 @@ Given a list of whole numbers with no duplicates construct a *maximum binary tre
 
 Test case:
 
-    print $ constructMaxBTree [3, 2, 1, 6, 0, 5] == t2
+    print $ constructMaxBTree [3, 2, 1, 6, 0, 5] == t
 
-    t2:
+    t:
            6
         /     \
        3       5
@@ -110,28 +110,6 @@ Trees used:
 
     t6 :: BTree
     t6 = Node 8 (Node 3 (Node 1 Empty Empty) (Node 4 Empty Empty)) (Node 10 (Node 5 Empty Empty) Empty)
-
-# Task 5
-For an algebraic type representing an **n-ary** tree, define a predicate that checks whether it is a graceful tree. We say that a tree is a graceful tree if the absolute difference between every child node and its father is an even number.
-
-*t1*:
-
-       1
-    / / \ \
-    3 5  7 9
-
-*t2*:
-
-      7
-      |
-      9
-     / \
-    5   2
-
-Test cases:
-
-    print $ isGraceful t1 == True
-    print $ isGraceful t2 == False
 
 # For home
 # Task 1
@@ -210,3 +188,25 @@ If we convert the tree in the form *length of interval*, we get this:
     1   5     14
 
 The above tree is a binary search tree, so the output has to be "True".
+
+# Task 4
+For an algebraic type representing an **n-ary** tree, define a predicate that checks whether it is a graceful tree. We say that a tree is a graceful tree if the absolute difference between every child node and its father is an even number.
+
+*t1*:
+
+       1
+    / / \ \
+    3 5  7 9
+
+*t2*:
+
+      7
+      |
+      9
+     / \
+    5   2
+
+Test cases:
+
+    print $ isGraceful t1 == True
+    print $ isGraceful t2 == False
