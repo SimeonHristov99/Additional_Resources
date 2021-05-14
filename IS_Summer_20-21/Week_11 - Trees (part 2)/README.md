@@ -16,6 +16,7 @@ Test cases:
 
     print $ t
     print $ size t == 13
+    print $ getLevel t 2 == [5, 8, 9, 11, 13, 6, 4]
 
 # Task 2
 ![tree_task3](pictures/tree.png?raw=true)
