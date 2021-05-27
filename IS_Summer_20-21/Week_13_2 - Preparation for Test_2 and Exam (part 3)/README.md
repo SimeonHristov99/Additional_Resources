@@ -31,4 +31,5 @@ Trees:
     t4 :: BTree Char
     t4 = Node 'a' (Node 'c' (Node 'd' Nil Nil) Nil) (Node 'g' Nil Nil)
 
-# The other tasks are in "Tasks1.pdf" and in "Tasks2.pdf".
+# Task 2 ..
+Open and solve "Tasks1.pdf" and in "Tasks2.pdf".
