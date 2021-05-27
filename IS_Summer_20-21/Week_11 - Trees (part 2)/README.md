@@ -107,7 +107,7 @@ Test case:
         then g 2.2 3 -> -0.4399999999999998
 
 # Task 2
-Define a function that accepts a list of countries and returns the name of the country with the highest average elevation.
+Define a function that accepts a list of countries and returns the name of the country with the highest capital, i.e. the capital on the highest elevation.
 
 Use the following types:
 
