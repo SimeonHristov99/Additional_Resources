@@ -1,3 +1,14 @@
+import Data.List
+
+main :: IO()
+main = do
+   print $ allContain [t1, t2] == ["acd","cd","d"]
+   print $ allContain [t1, t2, t3] == []
+   print $ allContain [t3, t4] == ["g"]
+
+allContain :: [BTree] -> [String]
+allContain = foldr1 intersect . map genWords
+
 data BTree = Nil | Node Char (BTree) (BTree)
 
 t1 :: BTree
